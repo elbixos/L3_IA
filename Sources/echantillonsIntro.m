@@ -18,6 +18,11 @@ pFemmes = 1-pHommes
 
 nExemples = 500
 
+fumeurs = 0.33
+nonFumeurs = 1-fumeurs
+
+
+
 %% tweak !
 nHommes = nExemples * pHommes
 exHommes = [(randn(nHommes,1)*sTailleHommes+1.82),(randn(nHommes,1)*sPoidsHommes+mPoidsHommes)]
@@ -51,3 +56,32 @@ xlabel('taille')
 ylabel('poids')
 legend('hommes', 'femmes', 'Inconnu')
 print('taillePoidsClassif.png','-dpng')
+
+
+
+clopesFumeurs = uint8(randn(fumeurs*nExemples,1)*15+15)
+clopesNonFumeurs = zeros(uint8(nonFumeurs*nExemples),1)
+
+all = [clopesFumeurs;clopesNonFumeurs]
+all = double(all)
+moyVie = 71.8
+sVie = 15.927
+esperanceAvantClopes = randn(size(all))*10.5 + moyVie
+
+% une cigarette = 5mn de vie en moins...
+% => nb min en moins sur une vie = 5* esperance de vie * 365 *nbClopes 
+% => nb années en moins = 5* esperance de vie * 365 *nbClopes / 60 / 24 /365
+% => nb années en moins = 5* esperance de vie *nbClopes / 60 / 24 
+
+%% TWEAK : ^1.6 pour accentuer.
+perte = (1+(5* esperanceAvantClopes.*all /60 /24)).^1.6
+esperance = esperanceAvantClopes - perte
+
+figure()
+plot(all, esperance,'.')
+axis([[0 30 0 inf]])
+hold on
+plot([14,14],[0,100],'k')
+xlabel('nb Cigarettes')
+ylabel('Esperance de vie')
+print('clopesRegression.png','-dpng')

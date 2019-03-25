@@ -83,3 +83,34 @@ Pouvez vous prendre une décision concernant le point inconnu ?
 Pourriez vous décrire un programme qui prenne cette décision ?
 
 ### Application à la Régression
+
+Encore une fois, je vais re-simplifier l'exemple précédent pour des questions
+de visualisation. La version complète arrivera plus tard.
+
+Nous disposons d'exemples connus dont nous connaissons le nombre de cigarettes
+qu'ils fument par jour. Nous voudrions, pour un individu inconnu, déduire son espérance de vie. Pour cela, il faut impérativement que pour chaque exemple connu, nous sachions quel est son espérance de vie.
+
+*Notez qu'ici, j'ai littéralement complètement inventé les chiffres utilisés
+pour mes exemples...*
+
+Nous aurons donc des exemples connus :
+
+nb Clopes | Esperance de vie
+------ | -----
+22  |   74
+0   | 45
+0   | 84
+22  | 51
+0   | 90
+10  | 72
+4   | 67
+... | ...
+0   | 69
+
+Et nous voulons savoir quelle serait l'espérance de vie d'un inconnu dont les caractéristiques sont les suivantes :
+
+nb Clopes : 14
+
+Encore une fois, avec ce tableau, je pourrais faire toutes sortes de calculs, mais je peux surtout visualiser mes données : Notre programme doit choisir une valeur en ordonnée sur la ligne noire.
+
+![Esperance de vie en fonction du nombre de cigarettes (modifiée)](../Sources/clopesRegression.png)
