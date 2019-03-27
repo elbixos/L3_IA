@@ -117,6 +117,9 @@ Encore une fois, avec ce tableau, je pourrais faire toutes sortes de calculs, ma
 
 ![Esperance de vie en fonction du nombre de cigarettes (modifiée)](../Sources/clopesRegression.png)
 
+
+TODO : AJOUTER un graphique clopes / alcool
+
 #### Conclusion sur ces applications
 
 Ce n'est pas détaillé dans ce document (pas eu le temps) mais nous avons vu
