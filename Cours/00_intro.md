@@ -1,5 +1,17 @@
 ## Introduction
 
+### Hal 9000, Skynet, Red Queen, Jarvis et leurs amis.
+
+Un cours d'IA sans son questionnement sur le futur des IA, et la possible
+disparition de l'humanité à cause de ces programmes ne serait pas un vrai cours
+d'IA !
+
+J'ai donc essayé, au début du cours, de faire la part des choses entre le
+fantasme et la réalité des techniques actuelles. C'est assez long à rédiger,
+je le ferais sans doute plus tard...
+
+### L'IA non fantasmée
+
 Dans ce cours, il s'agit de commencer d'aborder les techniques dites
 d'**Intelligence Artificielle**. Ce domaine est très vaste (une partie est déja
 abordée en *Graphes, Flots et Applications*). Ici, nous nous cantonnerons au
