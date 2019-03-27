@@ -4,8 +4,8 @@
 Rappelons l'objectif, pour l'exemple de la classification :
 
 Ce que nous cherchons à mettre au point n'est pas un programme qui reconnaisse
-au mieux les hommes et les femmes sur la base de leur poid et de leur taille,
-mais un programme qui, si on lui donne des exemples de (taille,poids,sexe)
+au mieux les hommes et les femmes sur la base de leur poids et de leur taille,
+mais un programme qui, si on lui donne des exemples de (taille, poids, sexe)
 sera capable de choisir un sexe pour n'importe quelle valeur (taille, poids).
 
 Il s'agit donc de se détacher du problème précis, pour trouver des solutions plus
@@ -19,7 +19,9 @@ Tout d'abord, nous étudions un objet ou une situation, défini par des nombres.
 Ces nombres sont rangés dans un *vecteur*, que l'on nomme **vecteur de caractéristiques**, ou encore **feature vector** en anglais.
 
 Dans les exemples que nous avons vu, notre vecteur de caractéristiques
-était le vecteur [taille, poids] pour les applications de clustering et de classification. Dans le cas de la régression présentée, ce vecteur était le vecteur [nbClopes]
+était le vecteur [taille, poids] pour les applications de clustering et de classification. Dans le cas de la régression présentée, ce vecteur était le vecteur *[nbClopes]*
+
+La taille de ce vecteur est extrêmement importante (plus ce vecteur sera grand, plus il faudra d'exemples). Cette taille est la **dimension** de l'espace des caractéristiques dont nous allons parler maintenant.
 
 
 #### L'espace des caractéristiques
@@ -53,8 +55,8 @@ et une **vérité terrain** :
 - pour la classification, cette **vérité** est la catégorie de l'exemple (le sexe de la personne pour notre application). On parle de la **Classe** de l'exemple.
 - pour la régression, cette **vérité** est la valeur à prédire (l'espérance de vie pour notre application)
 
-Les problèmes de classification et de régression sont des problèmes dits d'**Apprentissage Supervisé** (*supervised learning* en anglais): notre programme va devoir apprendre sur des exemples qui sont fournis avec la "vraie" réponse attendue, comme si un prof lui
-indiquait la bonne réponse qu'il devrait fournir pour cet exemple.
+Les problèmes de classification et de régression sont des problèmes dits d'**Apprentissage Supervisé** (*supervised learning* en anglais): notre programme va devoir apprendre sur des exemples qui sont fournis avec la "vraie" réponse attendue, comme si un enseignant lui indiquait la réponse qu'il devrait
+fournir pour cet exemple.
 
 #### Apprentissage / Test / Prédiction
 
@@ -71,3 +73,18 @@ Nous allons modifier notre algorithme pour que :
 2. une seconde phase prenne la décision en se basant exclusivement sur :
   - le vecteur de caractéristiques de l'objet inconnu
   - les informations apprises en phase 1.
+
+Je remet ici le schéma initial :
+![Poids et des tailles par sexe en france, le retour](../Sources/taillePoidsClassif2.png)
+
+Une des façon d'appendre des choses des exemples est de ne retenir
+que ce qu'est un "homme moyen" et une "femme moyenne"
+
+![Poids et des tailles par sexe en france et moyennes](../Sources/taillePoidsClassif2Bary.png)
+
+Il est alors très rapide de comparer un vecteur de caractéristiques à ce que nous avons retenu :
+![Prediction par distance aux barycentres](../Sources/taillePoidsClassif2BaryPredict.png)
+
+Dans ce cas :
+- la phase d'apprentissage est un calcul de moyenne.
+- la phase de prédiction compare le vecteur a ces moyennes.
