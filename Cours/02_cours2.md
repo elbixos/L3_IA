@@ -88,3 +88,9 @@ Il est alors très rapide de comparer un vecteur de caractéristiques à ce que 
 Dans ce cas :
 - la phase d'apprentissage est un calcul de moyenne.
 - la phase de prédiction compare le vecteur a ces moyennes.
+
+### Evaluation de performances
+
+Quoiqu'il en soit, nous allons essayer de construire des algorithmes aussi bon
+que possible pour un problème donné.
+Il sera donc nécessaire d'évaluer les performances de nos différents algorithmes.
