@@ -240,3 +240,9 @@ Ces performances en généralisation sont logiquement inférieures aux performan
 en apprentissage, mais pas trop. Dans le cas correspondant à l'image présentée ci
 dessus, la probabilité de classification correcte en généralisation était de
 0.76...
+
+
+___
+
+Vous pouvez repartir vers le [Sommaire](99_sommaire.md)
+___

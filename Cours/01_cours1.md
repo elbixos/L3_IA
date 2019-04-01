@@ -131,3 +131,9 @@ sur un exemple inconnu, on peut chercher :
 - les k plus proches voisins parmi les exemples connus et combiner les résultats obtenus par chacun de ces voisins (moyenne ou vote)
 
 A ce stade, nous avons posé le contexte et vous avez quelques idées sur des solutions potentielles. Pour aller plus loin, il va falloir rendre tout cela un peu plus carré et donc formaliser un peu ces problèmes
+
+
+___
+
+Vous pouvez repartir vers le [Sommaire](99_sommaire.md)
+___
