@@ -1,6 +1,6 @@
 ## Introduction
 
-### Hal 9000, Skynet, Red Queen, Jarvis et leurs amis.
+### L'instant Philo : Hal 9000, Skynet, Red Queen, Jarvis et leurs amis.
 
 Un cours d'IA sans son questionnement sur le futur des IA, et la possible
 disparition de l'humanité à cause de ces programmes ne serait pas un vrai cours
@@ -9,6 +9,33 @@ d'IA !
 J'ai donc essayé, au début du cours, de faire la part des choses entre le
 fantasme et la réalité des techniques actuelles. C'est assez long à rédiger,
 je le ferais sans doute plus tard...
+
+En gros :
+
+1. les IA sont bonnes :
+    - quand le problème reste dans un cadre bien défini
+    - quand on dispose de très nombreux exemples
+
+On peut ainsi créer des IA pour reconnaitre des visages (les exemples abondent
+car les réseaux sociaux sont remplis d'exemples de photos de vous, annotées
+comme vous représentant). On peut aussi créer une IA qui jouera aux échecs
+(maintenant, le modèle standard est que l'IA joue contre elle même pour créer
+des exemples à partir desquels apprendre). On pourrait, sur le même principe,
+faire une IA qui batte tout le monde à FIFA.
+
+Il est un peu plus difficile de faire une IA qui conduise une voiture, car on
+peut difficilement 
+
+Il est plus difficile de créer une IA qui s'occupe d'un enfant en bas age.
+Parce
+
+2. Quels métiers peuvent être menacés :
+    les métiers
+
+
+
+Chaque cours commencera systématiquement sur quelques points culturel sur l'état
+des lieux en IA réelle.
 
 ### L'IA non fantasmée
 

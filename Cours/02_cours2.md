@@ -1,3 +1,9 @@
+### L'instant Philo.
+
+Notre intelligence vs intelligence Artificielle :
+Interaction des modules...
+Retour sur les medecins.
+
 
 ### Formalisation
 
@@ -40,6 +46,7 @@ s'intéresse aux espaces de grandes dimensions, c'est ce que l'on nomme **Big Da
 Notez également que l'on ne peut pas visualiser réellement des exemples dans des
 espaces de dimension > 3. Ce qui ne nous empêche pas de réfléchir et de calculer
 dessus.
+
 
 #### Apprentissage Supervisé vs Apprentissage Non Supervisé
 
@@ -88,6 +95,11 @@ Il est alors très rapide de comparer un vecteur de caractéristiques à ce que 
 Dans ce cas :
 - la phase d'apprentissage est un calcul de moyenne.
 - la phase de prédiction compare le vecteur a ces moyennes.
+
+#### Classification : Formalisation
+
+Régions de décisions.
+Fonctions caractéristiques.
 
 ### Evaluation de performances
 
