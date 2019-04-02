@@ -1,13 +1,14 @@
 ### L'instant Philo
 
--de l'importance des exemples.
-les biais des bases
+- de l'importance des exemples : les biais des bases
 
 ### le contenu en deux mots :
 
 - Performances en régression et clustering
-- la normalisation des données
 - clustering avec le k-means.
+- matlab / octave
+
+- la normalisation des données (pas sur)
 
 ___
 
