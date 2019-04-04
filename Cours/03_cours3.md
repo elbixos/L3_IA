@@ -6,7 +6,6 @@
 
 - Performances en régression et clustering
 - clustering avec le k-means.
-- matlab / octave
 
 - la normalisation des données (pas sur)
 

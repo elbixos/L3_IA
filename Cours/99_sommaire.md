@@ -1,5 +1,7 @@
 ## Sommaire
 
+### Les cours
+
 - [Introduction](00_intro.md)
   - les trois problèmes classiques : clustering / classification /
   régression.
@@ -15,3 +17,7 @@
   - Performances en regression et clustering
   - la normalisation des données
   - clustering avec le k-means.
+
+### Les TP
+
+- [TP 1](TP/tp1.md) : Intro Matlab
