@@ -76,13 +76,3 @@ A l'aide de la fonction **plot3** de matlab,
 
 Quelles sont les 3 caractéristiques les plus intéressantes pour la
 classification ?
-
-#### Création des bases d'apprentissage et de généralisation.
-
-faites un programme *createDatabases.m* qui aura pour objet de
-séparer les exemples en 2 fichiers
-- un fichier *learningBase.csv*
-- un fichier *testBase.csv*
-
-Vous aurez sans doute besoin de la fonction *writecsv* (ou *writematrix*) de
-matlab.

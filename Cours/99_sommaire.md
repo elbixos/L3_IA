@@ -21,3 +21,4 @@
 ### Les TP
 
 - [TP 1](TP/tp1.md) : Intro Matlab
+- [TP 2](TP/tp2.md) : ppv et k-ppv
