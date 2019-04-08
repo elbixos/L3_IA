@@ -1,3 +1,7 @@
+close all
+clear all
+
+
 x = 5;
 
 y =6;
@@ -40,8 +44,8 @@ A.*A;
 for i= y
   if i < 4
     disp( i )
-  endif
-endfor
+  end
+end
 
  
 A = [1,2,3,4,1,1,2,3,1,3,4; 0,4,3,0,0,0,0,0,0,0,0];
