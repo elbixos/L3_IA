@@ -19,7 +19,6 @@
 - [Cours 4](04_cours4.md) :
     - la normalisation des données
     - la malédiction de la dimensionnalité
-    - clustering avec le k-means.
 
 ### Les TP
 
