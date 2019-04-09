@@ -1,3 +1,8 @@
+
+<script type="text/javascript" async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
 ### L'instant Philo
 
 - correlation pas preuve
@@ -44,7 +49,4 @@ possible des caractéristiques *d*.
 pour *d=1* : une seule caractéristiques.
 tous mes exemples tombent dans l'une des *n* valeurs possibles pour cette
 caractéristique.
-La valeur moyenne de
-
-
-$$y = f(x)$$
+La valeur moyenne de $$y = f(x)$$
