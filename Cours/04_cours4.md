@@ -34,7 +34,17 @@ il va y avoir un compromis à trouver
 problème.
 
 Essayons de chiffrer tout ceci grossièrement :
-Disons que chacune de nos caractéristiques prend une valeur prise entre 0 et n.
-On dispose au total de N exemples
+- Disons que chacune de nos caractéristiques prend une valeur prise entre 0
+et n-1 (il y a *n* valeurs possibles par caractéristiques).
+- On dispose au total de N exemples
 
-$$ y = f(x) $$
+la connaissance de notre problème est liée au nombre moyen d'exemples par valeur
+possible des caractéristiques *d*.
+
+pour *d=1* : une seule caractéristiques.
+tous mes exemples tombent dans l'une des *n* valeurs possibles pour cette
+caractéristique.
+La valeur moyenne de
+
+
+$$y = f(x)$$
