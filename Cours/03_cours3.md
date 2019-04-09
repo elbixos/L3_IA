@@ -7,7 +7,7 @@
 - Performances en régression et clustering
 - clustering avec le k-means.
 
-- la normalisation des données (pas sur)
+
 
 ___
 
