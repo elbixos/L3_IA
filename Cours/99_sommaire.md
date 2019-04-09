@@ -15,8 +15,11 @@
   - performances en classification.
 - [Cours 3](03_cours3.md) :
   - Performances en regression et clustering
-  - la normalisation des données
   - clustering avec le k-means.
+- [Cours 4](04_cours4.md) :
+    - la normalisation des données
+    - la malédiction de la dimensionnalité
+    - clustering avec le k-means.
 
 ### Les TP
 
