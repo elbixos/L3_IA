@@ -5,9 +5,27 @@
 
 ### L'instant Philo
 
-- correlation pas preuve
+- corrélation pas preuve
 
 ### Normalisation des données
+Comme on l'a vu, beaucoup d'algorithmes fonctionne sur la base du calcul d'une
+distance entre vecteurs. Potentiellement, ce calcul de distance peut poser un
+problème :
+
+Imaginons trois individus, caractérisés par leur taille et leur poids.
+Le premier fait 1.78m pour 82 kg, le second 1.98m pour 83 kg.
+le troisième fait 1.78m et 84 kg
+Quelle est la distance entre ces deux individus ? Prenons L1 pour plus de
+facilité.
+
+Exprimés dans ces échelles :
+- $$d(P1,P2) = |1.78 - 1.98| + | 83 - 82 | = 1.2$$
+- $$d(P1,P3) = |1.78 - 1.78| + | 84 - 82 | = 2$$
+
+P1 est alors considéré plus proche de P3 que de P2 !
+
+Le problème vient de l'échelle des données : 
+
 
 ### La malédiction de la dimensionnalité.
 
