@@ -46,7 +46,53 @@ et n-1 (il y a *n* valeurs possibles par caractéristiques).
 la connaissance de notre problème est liée au nombre moyen d'exemples par valeur
 possible des caractéristiques *d*.
 
-pour *d=1* : une seule caractéristiques.
-tous mes exemples tombent dans l'une des *n* valeurs possibles pour cette
-caractéristique.
-La valeur moyenne de $$y = f(x)$$
+1. pour *d=1* : une seule caractéristique.
+  tous mes exemples tombent dans l'une des *n* valeurs possibles pour cette
+  caractéristique.
+  Le nombre moyen d'exemple par valeur possible est donc $$m_1 = N /n $$
+2. pour *d=2* : une seule caractéristique.
+    chaque caractéristique possible est un couple de valeur. Il y a donc
+    $n^2$ valeurs possible pour mes vecteurs de caractéristiques.
+    Le nombre moyen d'exemple par valeur possible est donc $$m_2 = N /n^2 $$
+3. dans le cas général, le nombre moyen d'exemple par valeur possible est donc
+$$m_2 = N /n^d $$
+
+prenez n = 10 (soit 10 valeurs possibles pour la taille, 10 pour le poids...)
+on aura les valeurs suivantes
+- $$m_1 = N/10$$
+- $$m_2 = N/100$$
+- $$m_d = N/(10^d)$$
+
+Comme on le voit, le nombre moyen d'exemple par valeur possible décroît
+exponentiellement par rapport au nombre de dimensions...
+
+Voyons le problème de l'autre côté. On veut garantir un nombre moyen d'exemples
+constants. disons qu'on sait que pour $$m_1 = m$$ (classification sur la taille
+seulement), on a des plutôt bons résultats.
+
+On veut ajouter une information (le poids). Il nous faudra ajouter des exemples
+pour conserver ce nombre moyen d'exemples. On veut donc $$m_2=m$$
+Ce qui implique :
+$$ N/n^2 = m$$ soit $$N = m * n^2$$
+
+Dans le cas général, on a $$ N = m * n^d$$.
+Disons que 100 exemples étaient suffisants pour classifier selon le poids
+seulement ($$m = 10$$) :
+il faudrait :
+- d = 2 : $$N = 10*10^2 = 1000$$ exemples pour la *[taille, poids]*.
+- d = 3 : $$N = 10*10^3 = 10000$$ exemples pour
+*[taille, poids, longueur des cheveux]*
+- d = 5 : $$N = 10*10^5 = 1 000 000$$ exemples pour
+*[taille, poids, longueur des cheveux, salaire, prix de la voiture,...]*
+
+On voit ainsi qu'il serait important de conserver uniquement des informations
+pertinentes pour la classification, sinon le nombre d'exemples nécessaire peut
+devenir rapidement ingérable.
+
+
+
+En résumé : si votre algorithme a de mauvaises performances :
+- peut être qu'il est nul.
+- peut être qu'il n'a pas assez d'informations (de caractéristiques)
+- peut être qu'il a trop d'informations (de caractéristiques) pour la base
+d'exemples que vous lui avez fourni.
