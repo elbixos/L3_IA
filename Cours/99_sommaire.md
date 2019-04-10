@@ -23,4 +23,6 @@
 ### Les TP
 
 - [TP 1](TP/tp1.md) : Intro Matlab
-- [TP 2](TP/tp2.md) : ppv et k-ppv
+- [TP 2](TP/tp2.md) : ppv
+- [TP 3](TP/tp3.md) : pp centres et kppv
+- [TP 4](TP/tp4.md) : breast cancer dataset
