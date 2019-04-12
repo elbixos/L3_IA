@@ -19,6 +19,9 @@
 - [Cours 4](04_cours4.md) :
     - la normalisation des données
     - la malédiction de la dimensionnalité
+- [Cours 5](05_cours5.md) :
+    - Théorie bayesienne de la décision
+    - matrice de confusion, rappel, précision
 
 ### Les TP
 
