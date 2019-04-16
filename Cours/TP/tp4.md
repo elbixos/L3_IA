@@ -4,7 +4,7 @@
 
 Vous trouverez dans les fichiers suivant une base de donnée concernant des
 cancer du sein :
-- [breast-cancer-wisconsin.name](breast-cancer-wisconsin.name) : la description
+- [breast-cancer-wisconsin.names](breast-cancer-wisconsin.names) : la description
 du fichier csv
 - [breast-cancer-wisconsin.data](breast-cancer-wisconsin.data) : le fichier csv
 
