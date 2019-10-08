@@ -3,16 +3,20 @@
 ### L'instant Philo : Hal 9000, Skynet, Red Queen, Jarvis et leurs amis.
 
 Un cours d'IA sans son questionnement sur le futur des IA, et la possible
-disparition de l'humanité à cause de ces programmes ne serait pas un vrai cours
-d'IA !
+disparition de l'humanité à cause de ces programmes ne serait pas un vrai
+cours d'IA !
 
 J'ai donc essayé, au début du cours, de faire la part des choses entre le
 fantasme et la réalité des techniques actuelles. C'est assez long à rédiger,
 je le ferais sans doute plus tard...
 
+Chaque cours commencera systématiquement sur quelques points culturel sur l'état
+des lieux en IA réelle.
+
+
 En gros :
 
-1. les IA sont bonnes :
+1. les IA sont efficaces :
     - quand le problème reste dans un cadre bien défini
     - quand on dispose de très nombreux exemples
 
@@ -23,19 +27,36 @@ comme vous représentant). On peut aussi créer une IA qui jouera aux échecs
 des exemples à partir desquels apprendre). On pourrait, sur le même principe,
 faire une IA qui batte tout le monde à FIFA.
 
-Il est un peu plus difficile de faire une IA qui conduise une voiture, car on
-peut difficilement 
+Il est un peu plus difficile de faire une IA qui conduise une voiture,
+car on peut difficilement gérer les erreurs que l'IA va commettre au cours
+de son apprentissage.
 
-Il est plus difficile de créer une IA qui s'occupe d'un enfant en bas age.
-Parce
+Il est également plus difficile de créer une IA qui s'occupe d'un enfant
+en bas age parce cela nécessite d'effectuer en parallèle de nombreuses
+tâches relativement complexes mais surtout interconnectées :
 
-2. Quels métiers peuvent être menacés :
-    les métiers
+- reconnaître l'émotion de l'enfant à chaque instant
+- moduler les activités en fonction de ces émotions.
 
 
+2. Quels métiers peuvent être menacés ? Tous les métiers ou la connaissance ne vient que d'exemples et ou les résultats peuvent être rapidement évalués.
+    - courtier en bourse
+    - médecin généraliste.
+    - pilote d'engin
 
-Chaque cours commencera systématiquement sur quelques points culturel sur l'état
-des lieux en IA réelle.
+Inversement, les métiers ou les situations sont les plus différentes d'un
+cas à l'autre ET qui nécessite une certaine dextérité de manipulation
+sont sont relativement protégés.
+Par exemple, à ce jour, il est inconcevable d'avoir un robot plombier,
+car aucune installation de plomberie n'est la même et qu'on peut difficilement imaginer un robot capable de passer sous toutes les toilettes
+du monde pour y changer un joint.
+Il est ainsi plus difficile d'avoir un robot plombier qu'un robot chirurgien
+(la salle est fixe dans le cas du chirurgien).
+
+Une nouveauté depuis 2014 (les GAN) a même permis aux IA d'atteindre des
+capacités de création (en musique, arts plastiques, design, mode ...).
+Ces IA sont capable de générer des choses nouvelles, ressemblant aux
+exemples qui lui sont fournis pour un résultat très bluffant.
 
 ### L'IA non fantasmée
 
