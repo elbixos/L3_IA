@@ -29,13 +29,25 @@ Pour ces TP, il vous faudra me rendre :
 - votre code,
 - un rapport final en pdf.
 
-l'énoncé est fourni dans un fichier au format jupyter notebook :
+l'énoncé est fourni dans un fichier au format **jupyter notebook** :
 
 [Le lien de l'énoncé et des sources du TP](https://drive.google.com/open?id=1KcEk1kuvoFgR7svmQKeXIJJ1S90S3qzR)
 
-Dans cette page vous trouverez du code executable sur colab, un environnement d'execution (hébergé par google).
+Si vous cliquez sur ce lien, on vous proposera de télécharger le fichier, ou de l'exécuter dans Colab. Colab, est un environnement d'exécution (hébergé par google) très utilisé en Machine Learning
+pour faire tourner des réseaux de neurones à distance...
 
-Si vous avez un compte gmail, vous pouvez modifier le contenu de cette page, cela devrait etre sauvegardé dans votre google drive.
+- Si vous avez un compte gmail, choisissez l'option 'exécuter dans Colab'
+- Si vous n'avez pas de compte gmail
+  - créez en un si possible et recommencez
+  - si vous êtes réfractaires à l'idée d'avoir un compte gmail,
+  il vous faudra mettre en place un serveur local jupyter notebook sur votre machine. Cette solution est légèrement plus lourde, je ne vous la conseille pas forcément, mais au besoin, contactez moi, nous le ferons ensemble et on adaptera la suite de ce texte.
+
+Je vais donc supposer que vous avez un compte gmail.
+Dans la page associée au lien précédent, vous trouverez :
+- du texte qui explique des trucs
+- du code exécutable en cliquant sur le signe "Play" à coté du code.
+
+Vous pouvez modifier le contenu du Jupyter Notebook, cela ne modifiera pas ma version et vos modifications devraient etre sauvegardé dans votre google drive (dans un répertoire appelé " colab Notebooks")
 
 pour rendre le code, vous pouvez :
-- developper sur votre copie de cette page
+- developper sur votre copie de cette page et m'envoyer le lien
