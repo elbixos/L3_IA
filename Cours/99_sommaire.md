@@ -25,7 +25,17 @@
 
 ### Les TP
 
-- [TP 1](TP/tp1.md) : Intro Matlab
-- [TP 2](TP/tp2.md) : ppv
-- [TP 3](TP/tp3.md) : pp centres et kppv
-- [TP 4](TP/tp4.md) : breast cancer dataset
+Pour ces TP, il vous faudra me rendre :
+- votre code,
+- un rapport final en pdf.
+
+l'énoncé est fourni dans un fichier au format jupyter notebook :
+
+[Cours/TP/heartDiseaseUCI.ipynb](Cours/TP/heartDiseaseUCI.ipynb)
+
+Dans cette page vous trouverez du code executable sur colab, un environnement d'execution (hébergé par google).
+
+Si vous avez un compte gmail, vous pouvez modifier le contenu de cette page, cela devrait etre sauvegardé dans votre google drive.
+
+pour rendre le code, vous pouvez :
+- developper sur votre copie de cette page
