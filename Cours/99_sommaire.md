@@ -31,7 +31,7 @@ Pour ces TP, il vous faudra me rendre :
 
 l'énoncé est fourni dans un fichier au format jupyter notebook :
 
-[Cours/TP/heartDiseaseUCI.ipynb](Cours/TP/heartDiseaseUCI.ipynb)
+[TP/heartDiseaseUCI.ipynb](TP/heartDiseaseUCI.ipynb)
 
 Dans cette page vous trouverez du code executable sur colab, un environnement d'execution (hébergé par google).
 
