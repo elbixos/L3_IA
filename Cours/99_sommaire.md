@@ -52,7 +52,7 @@ Vous pouvez modifier le contenu du Jupyter Notebook, cela ne modifiera pas ma ve
 Vous pouvez ainsi développer sur votre copie de cette page. Vous pouvez revenir dessus un autre jour à partir de votre google drive.
 
 
-#### pour rendre le TP :
+**pour rendre le TP** :
 
 1. Allez sur votre version du fichier jupyter Notebook
 2. Cliquer sur "Fichier", Télécharger le code .py" qui va vous permettre de ne récupérez que les sources, sans le texte.
