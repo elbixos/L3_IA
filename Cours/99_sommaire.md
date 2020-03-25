@@ -31,7 +31,7 @@ Pour ces TP, il vous faudra me rendre :
 
 l'énoncé est fourni dans un fichier au format jupyter notebook :
 
-[TP/heartDiseaseUCI.ipynb](TP/heartDiseaseUCI.ipynb)
+[Le lien de l'énoncé et des sources du TP](https://drive.google.com/open?id=1KcEk1kuvoFgR7svmQKeXIJJ1S90S3qzR)
 
 Dans cette page vous trouverez du code executable sur colab, un environnement d'execution (hébergé par google).
 
