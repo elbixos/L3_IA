@@ -47,7 +47,13 @@ Dans la page associée au lien précédent, vous trouverez :
 - du texte qui explique des trucs
 - du code exécutable en cliquant sur le signe "Play" à coté du code.
 
-Vous pouvez modifier le contenu du Jupyter Notebook, cela ne modifiera pas ma version et vos modifications devraient etre sauvegardé dans votre google drive (dans un répertoire appelé " colab Notebooks")
+Vous pouvez modifier le contenu du Jupyter Notebook, cela ne modifiera pas ma version et vos modifications devraient être sauvegardé dans votre google drive (dans un répertoire appelé " colab Notebooks")
 
-pour rendre le code, vous pouvez :
-- developper sur votre copie de cette page et m'envoyer le lien
+Vous pouvez ainsi développer sur votre copie de cette page. Vous pouvez revenir dessus un autre jour à partir de votre google drive.
+
+
+#### pour rendre le TP :
+
+1. Allez sur votre version du fichier jupyter Notebook
+2. Cliquer sur "Fichier", Télécharger le code .py" qui va vous permettre de ne récupérez que les sources, sans le texte.
+3. Vous pourrez alors déposer le code et le pdf du rapport sur e-cursus
