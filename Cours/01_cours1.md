@@ -89,7 +89,7 @@ valeurs.*
 - Pourriez vous écrire un programme qui prenne cette décision ? (normalement oui. sinon, pensez le problème en termes de [distance](HyperLinks/distance.md))
 
 L'algorithme auquel auquel vous avez sans doute pensé (*c'est mon coté mentaliste...*) est l'algorithme du [plus proche voisin](HyperLinks/ppv.md).
-Eventuellement, vous pourriez aller jetter un oeil à la liste des [algo de classification](classification.md)
+Eventuellement, vous pourriez aller jetter un oeil à [la page contenant les algo de classification](classification.md)
 
 #### Application à la Régression
 
