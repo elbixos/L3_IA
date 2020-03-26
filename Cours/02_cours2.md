@@ -296,17 +296,13 @@ de la classe des algorithmes dits "**de Monte carlo**". La variable *pas*
 est le pas de la descente, et se retrouve a peu près dans toutes ces méthodes,
 sous une forme ou une autre. Il faut souvent l'adapter au problème traité.
 
-*Notez que ces algorithmes d'optimisation ont un
-[vocabulaire](HyperLinks/vocabOptim.md) tout à fait spécifique qu'il vous
-faudra maitriser si vous voulez faire du machine learning un tout petit peu
-avancé.*
-
-### Evolution des performances pendant l'apprentissage
+### Évolution des performances pendant l'apprentissage
 
 On voit dans le pseudo code qui précède, que l'algo va en fait voir
 la totalité de la base de nombreuses fois (1000 fois)
 
-Au fur et à mesure, des essais
+Au fur et à mesure des essais, la probabilité d'erreur devrait
+diminuer. Dit autrement, la probabilité
 On peut ainsi observer la probabilité de succès sur la **base
 d'apprentissage** au fur et à mesure du temps.
 On mesure ainsi les **performances en apprentissage** pendant l'optimisation.
