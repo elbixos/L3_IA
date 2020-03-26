@@ -3,8 +3,7 @@
 
 C'est le point d'accès :
 - à toutes les pages de cours.
-- aux travaux pratiques si vous êtes etudiant en L3 Informatique à l'université
-des Antilles.
+- aux travaux pratiques.
 
 ### Les cours
 
@@ -33,7 +32,7 @@ des Antilles.
 
 Pour ces TP, il vous faudra me rendre :
 - votre code,
-- un rapport final en pdf.
+- ajoutun rapport final en pdf.
 
 l'énoncé est fourni dans un fichier au format **jupyter notebook** :
 
