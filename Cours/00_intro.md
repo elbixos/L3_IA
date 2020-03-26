@@ -147,5 +147,5 @@ assez peu complexes. Il vous faudra savoir ce qu'est :
 - une distance.
 
 ___
-Vous pouvez repartir vers le [Sommaire](99_sommaire.md)
+Vous pouvez passer au [Cours 1](01_cours1.md) ou repartir vers le [Sommaire](99_sommaire.md)
 ___
