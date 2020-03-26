@@ -1,11 +1,13 @@
-### L'instant Philo.
+# Cours 2
+
+## L'instant Philo.
 
 Notre intelligence vs intelligence Artificielle :
 Interaction des modules...
 Retour sur les medecins.
+TODO
 
-
-### Formalisation
+## Formalisation
 
 Rappelons l'objectif, pour l'exemple de la classification :
 
@@ -20,22 +22,24 @@ ou moins universelles à ces problèmes généraux.
 Mais comme nous devons discuter de ces problèmes, il nous faut un peu de
 vocabulaire...
 
-#### Le vecteur de caractéristiques
+### Le vecteur de caractéristiques
 
-Tout d'abord, nous étudions un objet ou une situation, défini par des nombres.
+Tout d'abord, nous étudions un objet ou une situation, souvent définis par des
+nombres (pas toujours, voir les différents [types de caractéristiques](HyperLinks/featureTypes.md)).
 Ces nombres sont rangés dans un *vecteur*, que l'on nomme **vecteur de
 caractéristiques**, ou encore **feature vector** en anglais.
 
-Dans les exemples que nous avons vu, notre vecteur de caractéristiques était le
-vecteur [taille, poids] pour les applications de clustering et de
-classification. Dans le cas de la régression présentée, ce vecteur était le
-vecteur *[nbClopes]*
+- Dans les les applications de clustering et de classification que nous avons vues, notre vecteur de caractéristiques était le vecteur *[taille, poids]*.
+- Dans le cas de la régression présentée au cours 1, les informations dont nous disposions étaient une seule valeur (*nbClopes*) que l'on peut voir comme un vecteur de dimension 1 *[nbClopes]*
 
-La taille de ce vecteur est extrêmement importante (plus ce vecteur sera grand,
-plus il faudra d'exemples). Cette taille est la **dimension** de l'espace des
-caractéristiques dont nous allons parler maintenant.
+La taille de ce vecteur est extrêmement importante (en gros, plus ce vecteur
+sera grand, plus il faudra d'exemples pour apprendre). Cette taille est appelée **dimension de l'espace des caractéristiques**.
+L'importance de cette dimenson est abordée dans la page de
+[la malédiction de la dimensionalité](HyperLinks/curseOfDim.md)
 
-#### L'espace des caractéristiques
+C'est de cet espace dont nous allons parler maintenant.
+
+### L'espace des caractéristiques
 
 Si on considère les caractéristiques de chaque exemple comme un vecteur, ce
 vecteur appartient à un espace vectoriel : l'**espace des caractéristiques**.
@@ -48,16 +52,15 @@ Pour simplifier, on pourrait considérer que cet espace des caractéristiques es
 Notez que nous travaillerons couramment avec des espaces de caractéristiques de
 dimensions 3,4, 10 ou 100. Une branche complète de l'apprentissage automatique
 s'intéresse aux espaces de grandes dimensions, c'est ce que l'on nomme **Big
-Data** (en fait, ca devient du big data quand il y a vraiment beaucoup
+Data** (en fait, cela devient du big data quand il y a vraiment beaucoup
 d'exemples. Notez que ce terme est en voie de désaffection car en sciences aussi,
 il y a des modes...)
 
 Notez également que l'on ne peut pas visualiser réellement des exemples dans des
-espaces de dimension > 3. Ce qui ne nous empêche pas de réfléchir et de calculer
-dessus.
+espaces de dimension > 3 (Vous pourriez aller voir [visualiser les données](HyperLinks/visualise.md) si ce cas vous intéresse).
+Ceci ne nous empêche pas de réfléchir et de calculer dans ce type d'espaces.
 
-
-#### Apprentissage Supervisé vs Apprentissage Non Supervisé
+### Apprentissage Supervisé vs Apprentissage Non Supervisé
 
 Si on regarde les choses de loin, on peut remarquer quelque chose :
 dans l'application de **clustering**, nous ne disposons à propos de nos exemples
@@ -65,14 +68,15 @@ que de leur **vecteur de caractéristiques**.
 
 Le problème de clustering est un problème dit d'**Apprentissage Non Supervisé**
 (ou *unsupervised learning* en anglais).
-Le programme doit apprendre avec les données, sans savoir ce que l'on attend de lui.
+Le programme doit apprendre avec les données, sans savoir ce que l'on attend de
+lui.
 
 En revanche, pour de la **classification** ou la **régression**, nos
 informations à propos de nos exemples sont leur **vecteur de caractéristiques**
 et une **vérité terrain** :
 - pour la classification, cette **vérité** est la catégorie de l'exemple (le
   sexe de la personne pour notre application). On parle de la **Classe** de
-  l'exemple.
+  l'exemple, ou de **label** de l'exemple.
 - pour la régression, cette **vérité** est la valeur à prédire (l'espérance de
 vie pour notre application)
 
@@ -80,22 +84,25 @@ Les problèmes de classification et de régression sont des problèmes dits
 d'**Apprentissage Supervisé** (*supervised learning* en anglais): notre
 programme va devoir apprendre sur des exemples qui sont fournis avec la "vraie"
 réponse attendue, comme si un enseignant lui indiquait la réponse qu'il devrait
-fournir pour cet exemple.
+fournir pour cet exemple. (Vous pourriez aller voir la page sur l'[Apprentissage
+supervisé](supervisedLearning.md) pour mieux comprendre comment certains
+algorithmes peuvent faire indifférement de la régression ou de la classification.)
 
-#### Apprentissage / Test / Prédiction
+### Phases : Apprentissage / Validation / Prédiction
 
 Un programme d'**Apprentissage supervisé** comporte en général 3 phases plus ou
 moins successives :
 - une phase d'**Apprentissage** pendant laquelle le programme apprend à partir
 des exemples qu'on lui a donné.
-- une phase de **Test** ou de **Généralisation** sur laquelle nous évaluerons
+- une phase de **Généralisation** ou de **validation** sur laquelle nous évaluerons
 l'algorithme sur des exemples qu'il n'a jamais vu.
 - une phase de **Prédiction** dans laquelle on fournit au programme des exemples
-inconnus et pour lesquels il doit indiquer sa décision.
+inconnus et pour lesquels il doit indiquer sa décision. Lorsque l'algorithme est disponible pour ses utilisateurs finaux, il est le plus souvent dans cette phase,
+mais pas toujours (voir [Apprentissage Inline](HyperLinks/inlineLearning.md)).
 
 Dans le cas d'un algorithme du plus proche voisin, il n'y a pas à proprement
 parler de phase d'apprentissage. On peut directement passer à la prédiction,
-qui elle, regarde chacun des exemples.
+qui elle, regarde chacun des exemples connus.
 
 Nous allons modifier notre algorithme pour que :
 1. une première phase extraie des informations de la base d'exemples.
@@ -111,65 +118,29 @@ que ce qu'est un "homme moyen" et une "femme moyenne"
 
 ![Poids et des tailles par sexe en france et moyennes](../Sources/taillePoidsClassif2Bary.png)
 
-Il est alors très rapide de comparer un vecteur de caractéristiques à ce que
-nous avons retenu :
+Il est alors très rapide
+(voir [temps de calculs des différents phases](HyperLinks/computationTimes.md))
+de comparer un vecteur de caractéristiques à ce que nous avons retenu :
+
 ![Prediction par distance aux barycentres](../Sources/taillePoidsClassif2BaryPredict.png)
 
 Dans ce cas :
 - la phase d'apprentissage est un calcul de moyenne.
 - la phase de prédiction compare le vecteur a ces moyennes.
 
-Il est aussi possible d'apprendre tout un tas d'autres choses comme, au choix :
-- la droite qui sépare au mieux les exemples
-- la succession de tests
+Il est possible d'apprendre tout un tas d'autres choses. C'est d'ailleurs
+un des points qui distingue les différents algorithmes de classification ([classification](HyperLinks/classification.md)) ou de ([régression](HyperLinks/regression.md)).
 
-### Classification : Formalisation
+Enfin, notez que pour passer ces différentes phases, il faut
+impérativement séparer la base d'exemples en deux sous bases (minimum) :
+- la **base d'apprentissage** contenant des exemples (et leur vraie classe) qui
+servira à l'algorithme pour apprendre à reconnaître les différentes classes
+lors de la **phase d'apprentissage**
+- la **base de généralisation** appelée aussi parfois **base de validation** qui contient également les caractéristiques des exemples et leur véritable classe mais pour des exemples que l'algorithme n'a jamais vu. Cette base
+servira pour évaluer les performances attendues de l'algorithme en utilisation
+réelle (**phase de validation**).
 
-Les catégories dans lesquelles on doit ranger chaque objet sont appelées des
-**classes**. Il y aura par exemple, la classe *Homme* et la classe *Femme*.
-Chaque classe portera souvent un numéro pour simplifier le problème et on parlera
-de la classe 0 et de la classe 1...
-
-Nous pouvons maintenant formaliser le problème de classification de 2 façons.
-
-#### Régions de décisions
-On peut considérer que classifier, c'est *partitionner l'espace des
-caractéristiques en* **régions de décisions**. Chaque **classe** (*i*) est
-représentée par une région *Ri* et la prise de décision se fait de la façon
-suivante :
-```python
-for i in classes :
-  if x in Ri :
-    decision = i
-```
-
-Par exemple, un algorithme qui trouve la meilleure droite fonctionne comme cela.
-
-#### Fonctions discriminante.
-On peut également raisonner en termes de **fonctions discriminantes** :
-Chaque classe *i* dispose d'une fonction *fi(x)* qui calcule le score d'un objet
-qui est potentiellement de sa classe.
-
-l'algorithme est le suivant :
-```latex
-decision = argmin_{i} f_i(x)
-```
-
-Cette version est beaucoup plus souple que les régions de décisions.
-
-- L'algorithme du plus proche voisin travaille par exemple avec comme fonctions
-discriminantes :
-```latex
-f_i(x) = - min_{P in C_i} d(x,P)
-```
-- L'algorithme des k plus proches voisins travaille par exemple avec comme
-fonctions discriminantes :
-```latex
-f_i(x) = nbVoisins in C_i
-```
-
-- Je pourrais illustrer ceci par des réseaux de neurones, comme en cours, mais
-je n'ai pas le temps tout de suite...
+Cette séparation fait l'objet de la page [séparer sa base d'exemple](HyperLinks/baseSplit.md)
 
 ### Evaluation de performances
 
@@ -177,43 +148,171 @@ Quoiqu'il en soit, nous allons essayer de construire des algorithmes aussi bons
 que possible pour un problème donné.
 Il sera donc nécessaire d'évaluer les performances de nos différents algorithmes.
 
-#### Performance en classification
-
-Tout d'abord, il convient de disposer de 2 bases d'exemples, avec leurs classes
-associées.
-
-##### Apprentissage et Généralisation (ou Test)
-- la **base d'apprentissage** contenant des exemples (et leur vraie classe) qui
-servira à l'algorithme pour apprendre à reconnaitre les différentes classes.
-
-- la **base de Généralisation** ou **base de test** qui contient également des
-exemples et leur véritable classe mais que l'algorithme n'a jamais vu. Cette base
-servira pour évaluer les performances attendues de l'algorithme en utilisation
-réelle.
-
-Si vous ne disposez que d'une seule base d'exemples, coupez la en deux bases.
-Une répartition raisonnable serait : 2/3 des exemples pour apprendre, 1/3 pour
-tester. Si vous avez beaucoup d'exemples, vous pourrez aller jusqu'à 4/5 pour
-apprendre, 1/5 pour tester.
-
-##### Probabilité de succès ou probabilité d'erreur.
+Dans cette version du cours niveau de base, je vais me concentrer sur un problème
+de classification.
 
 La première question est : si j'ai 2 algorithmes, lequel est le meilleur ?
+
 Une réponse raisonnable est :
-*Celui qui, en moyenne, à le plus souvent raison*.
+*Celui qui, en moyenne sur de nombreux exemples, a le plus souvent raison*.
 
 Ceci est complètement équivalent à *celui qui, en moyenne, se trompe le moins*.
 
-Nous disposons donc d'une première mesure si l'on dispose d'un algorithme et
-d'une base d'exemples avec leurs classe associée qui sera le nombre moyen
-d'erreurs de notre algorithme sur ces exemples. Ce chiffre est assimilable à une
-**probabilité d'erreur**.
+Si l'on dispose d'un algorithme et d'une base d'exemples avec leurs classes
+associée, nous avons donc une première mesure :
 
-Lors d'un apprentissage, il peut être nécessaire de faire plusieurs passes de
-la base d'apprentissage pour que l'algorithme ait le temps de trouver les *bons
-paramètres*. Auquel cas on peut observer la probabilité de succès sur la **base
+Le nombre moyen d'erreurs de notre algorithme sur ces exemples.
+Ce chiffre est assimilable à une **probabilité d'erreur**.
+
+Une autre mesure possible serait bien évidemment la **précision**
+qui est la probabilité de reconnaitre correctement un exemple.
+
+Ces deux mesures sont équivalentes, simplement, on essaiera d'obtenir
+l'algorithme avec la probabilité d'erreur moyenne la plus faible.
+Cet algorithme a également la précision la plus haute parmi tous les
+algorithmes possibles.
+
+Il y a d'autres [mesures de performances](HyperLinks/perfMeasures.md) mais restons
+en pour le moment à la probabilité d'erreur.
+
+Il faut mesurer les performances
+- lors de l'apprentissage (on calcule la proba d'erreur sur les exemples de la
+  base d'apprentissage). Cela nous permet de dire à quel point notre algorithme
+  est bon sur des exemples qu'il a déja vus.
+- lors de la validation (on calcule la proba d'erreur sur les exemples de la
+  base de validation). Cela nous permet de dire à quel point notre algorithme
+  est bon sur des exemples qu'il n'a jamais vus.
+
+Ce sont bien ces **performances en validation** qui permettent de savoir
+si notre algorithme est suffisamment fiable pour passer en phase de prédiction.
+
+On distingue trois cas possibles. Si notre algorithme a :
+- des performances en validation légèrement inférieures aux performances
+  en apprentissage, tout va bien jusque là.
+- des performances en validation très inférieures aux performances en
+  apprentissage, vous avez vraisemblablement un problème de
+  **sur apprentissage**. Ce cas est tellement courant qu'il fait l'objet de
+  [cette page](HyperLinks/overfitting.md).
+- des performances en validation supérieures à ses performances en  
+  apprentissage, c'est bizarre. Votre programme est sans doute buggé
+  ou bien vous avez un [problème dans votre base d'exemples](HyperLinks/problemeBase.md)
+  ou encore vous avez mal [séparé votre base d'exemples](HyperLinks/baseSplit.md)
+
+Je pense que ce qui précède est facile à comprendre vu que n'importe quelle
+intelligence (artificielle ou non) s'en sort souvent mieux sur les exemples
+qu'elle a déja vu que sur de nouveaux exemples.
+
+Un autre problème majeur est le suivant :
+Mettons que mon algorithme ait les proba d'erreur suivantes : 0.75 en apprentissage, 0.79 en généralisation.
+
+Est il bon ou pas ? En d'autres termes, quelles performances peut on atteindre avec un algorithme de machine learning ? Ce point est délicat et implique
+notamment les notion de [difficulté intrinsèque du problème](HyperLinks/difficulePb.md) et de [Qualité du modèle](HyperLinks/qualiteModele.md)
+
+### Apprentissage par optimisation
+
+La plupart des véritables algorithmes de machine learning sont de cette
+catégorie. Pour vous expliquer ce que c'est, je vais me servir d'un exemple.
+
+On reprend le problème de séparation hommes / femme,
+avec comme caractéristiques : [taille, poids].
+
+Je veux construire un algorithme qui va trouver la meilleure droite pour séparer
+ces deux classes. Je sais de plus que cette droite passe par le point M marqué
+en noir dans la figure suivante.
+
+TODO : ajouter figure.
+
+L'équation de n'importe quelle droite passant par ce point (M[0],M[1]) est donc
+$$a(x-M[0] + b (y-M[1]) + c = 0 $$, avec $(a,b,c) \in R^3$
+
+Pour un couple de paramètre fixé (donc pour une droite donnée),
+la décision de notre algorithme est prise de la façon suivante :
+- si $a(x-M[0] + b(y-M[1]) + c > 0$ : on décide que c'est un homme,
+- sinon, c'est une femme
+
+La figure suivante présente 2 exemples de droite (donc deux algorithmes
+  différents mais basés sur ce principe), dont les performances en Apprentissage
+  sont différentes
+
+TODO ajouter figures
+
+Posez vous les questions suivantes :
+- entre ces deux algorithmes, lequel est le meilleur ? (la réponse est : le bleu.)
+- Peut on faire mieux ? (la réponse est oui)
+
+Il s'agit donc de trouver les paramètres (a,b,c) qui donnent les meilleurs
+résultats. Meilleurs signifiant ici : avec la meilleure mesure de performance
+en apprentissage. C'est un problème d'**optimisation**. Vous avez eu des cours
+à ce sujet, je pense.
+
+La solution la plus simple pour trouver une "bonne" solution
+consiste à faire la chose suivante (en pseudo code)
+
+```python
+# on choisit un triplet (a0,b0,c0) initial (éventuellement au hasard)
+# Ce triplet sera le premier jeu de paramètres testé par notre algo.
+(testa,testb,testc) = (a0,b0,c0)
+
+# On cree une variable pour mémoriser les meilleurs performances trouvées
+bestPerreur = 1
+
+# On crée une variable pour fixer le nombre d'essais maximum
+nMax= 1000
+
+# On crée une variable pour compteur les tests déja faits
+n=0
+
+# Puis on va chercher des meilleurs solutions.
+while bestPerreur > 0 and n < nMax:
+
+  # on mesure les perf obtenues sur la base d'apprentissage avec ces paramètres.
+  newPerreur = mesureProbaErreur(a,b,c, baseApprentissage)
+
+  # On met a jour les meilleurs perf trouvées et les meilleurs param trouvés
+  if newPerreur < bestPerreur :
+    (a,b,c) = (testa,testb,testc)
+    bestPerreur = newPerreur
+
+  # On génère une nouvelle configuration en deplacant testa,testb,testc
+  # UN PETIT PEU et AU HASARD !
+  testa+= random.random() *pas
+  testb+= random.random() *pas
+  testb+= random.random() *pas
+```
+
+Mon pseudo code devrait fonctionner en python (sous réserve d'avoir fait la
+fonction *mesureProbaErreur*). A ceci près que je n'ai pas fixé de valeur
+à la variable *pas*...
+
+A l'issue de cet algorithme :
+- on aura testé 1000 possibilités pour (a,b,c)
+- en partant de (a0,b0,c0)
+- en conservant toujours la meilleur possible
+- en essayant toujours juste a coté de la meilleur solution trouvée jusque là
+
+Cette méthode simple mais efficace rentre dans la grande catégorie des
+[algorithmes d'optimisation](HyperLinks/algoOptim.md). Pour information, c'est un membre
+de la classe des algorithmes dits "**de Monte carlo**". La variable *pas*
+est le pas de la descente, et se retrouve a peu près dans toutes ces méthodes,
+sous une forme ou une autre. Il faut souvent l'adapter au problème traité.
+
+*Notez que ces algorithmes d'optimisation ont un
+[vocabulaire](HyperLinks/vocabOptim.md) tout à fait spécifique qu'il vous
+faudra maitriser si vous voulez faire du machine learning un tout petit peu
+avancé.*
+
+### Evolution des performances pendant l'apprentissage
+
+On voit dans le pseudo code qui précède, que l'algo va en fait voir
+la totalité de la base de nombreuses fois (1000 fois)
+
+Au fur et à mesure, des essais
+On peut ainsi observer la probabilité de succès sur la **base
 d'apprentissage** au fur et à mesure du temps.
-On mesure ainsi les **performances en apprentissage**
+On mesure ainsi les **performances en apprentissage** pendant l'optimisation.
+
+
+
 Elle doivent (si tout se passe bien) évoluer de la façon suivante :
 
 La figure suivante est tirée des tests effectués par l'un d'entre vous sur
