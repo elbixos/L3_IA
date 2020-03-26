@@ -1,4 +1,10 @@
 ## Sommaire
+(niveau de base)
+
+C'est le point d'accès :
+- à toutes les pages de cours.
+- aux travaux pratiques si vous êtes etudiant en L3 Informatique à l'université
+des Antilles.
 
 ### Les cours
 
