@@ -1,16 +1,29 @@
 ## Introduction
 
+### Préambule
+Depuis le début de la crise du COVID-19, il m'a fallu mettre en place des cours à distance. Si je disposais déja de supports plus ou moins bien fait
+pour accompagner mes cours en présentiel, ces supports se sont révélés immédiatement inadaptés à de l'enseignement à distance.
+
+J'ai donc revu totalement l'organisation de ce cours et voila ce qui va se passer (oui, comme dans *le visiteur du futur*...) :
+
+Ce support de cours sera, à terme, organisé comme suit :
+- il est prévu pour être suivi dans l'ordre du [Sommaire](99_sommaire.md). A la fin d'un cours présentiel, je passe au cours suivant.
+- Ces pages accessibles depuis le sommaire (ce sont les **pages de base** ne constituent qu'une petite partie des connaissances que vous devez acquérir. Pour se donner une idée, je dirais que les pages de bases vous permettent de comprendre la philosophie générale de l'IA et de l'apprentissage automatique et d'acquérir le vocabulaire suffisant pour ne pas avoir trop l'air ridicule si on vous demande d'en parler.avec les pages de bases seulement, vous devriez avoir entre 0 et 5  - Si vous avez la chance (?) de pouvoir assister aux cours présentiels, j'y détaille un certain nombre de points seulement effleurés dans les **pages de base**
+- Vous trouverez dans les pages de bases un certain nombre de liens qui correspondent) ces points
+
+
+
 ### L'instant Philo : Hal 9000, Skynet, Red Queen, Jarvis et leurs amis.
 
 Un cours d'IA sans son questionnement sur le futur des IA, et la possible
 disparition de l'humanité à cause de ces programmes ne serait pas un vrai
 cours d'IA !
 
-J'ai donc essayé, au début du cours, de faire la part des choses entre le
+J'ai donc essayé, au début du cours en présentiel, de faire la part des choses entre le
 fantasme et la réalité des techniques actuelles. C'est assez long à rédiger,
 je le ferais sans doute plus tard...
 
-Chaque cours commencera systématiquement sur quelques points culturel sur l'état
+Chaque cours présentiel commencera systématiquement sur quelques points culturel sur l'état
 des lieux en IA réelle.
 
 
@@ -53,9 +66,8 @@ du monde pour y changer un joint.
 Il est ainsi plus difficile d'avoir un robot plombier qu'un robot chirurgien
 (la salle est fixe dans le cas du chirurgien).
 
-Une nouveauté depuis 2014 (les GAN) a même permis aux IA d'atteindre des
-capacités de création (en musique, arts plastiques, design, mode ...).
-Ces IA sont capable de générer des choses nouvelles, ressemblant aux
+Une nouveauté depuis 2014 (les [GAN](GAN.md)) a même permis aux IA d'atteindre des capacités de création (en musique, arts plastiques, design, mode ...).
+Ces IA sont capables de générer des choses nouvelles, ressemblant aux
 exemples qui lui sont fournis pour un résultat très bluffant.
 
 ### L'IA non fantasmée
@@ -117,8 +129,6 @@ assez peu complexes. Il vous faudra savoir ce qu'est :
 - un vecteur
 - une distance.
 
-
 ___
-
 Vous pouvez repartir vers le [Sommaire](99_sommaire.md)
 ___

@@ -81,8 +81,10 @@ Encore une fois, avec ce tableau, je pourrais faire toutes sortes de calculs, ma
 de taille et de poids des francais. Je reviendrais plus tard aux véritables
 valeurs.*
 
-Pouvez vous prendre une décision concernant le point inconnu ?
-Pourriez vous décrire un programme qui prenne cette décision ?
+- Pouvez vous prendre une décision concernant le point inconnu ?
+- Pourriez vous décrire un programme qui prenne cette décision ?
+
+L'algorithme le plus simple auquel on puisse penser est l'algorithme du [plus proche voisin](ppv.md). Juste après vient l'algorithme des [k plus proches voisins](kppv.md)
 
 #### Application à la Régression
 
