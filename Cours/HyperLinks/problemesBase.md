@@ -18,7 +18,7 @@ Parmi ces problèmes, voici quelques cas classiques :
 
 ## Base mal documentée
 
-Soit vous avez des données mais vous n'avez aucune information sur ce qu'elles représentent. Votre fichier csv présente des lignes comme :
+Soit vous avez des données mais vous n'avez aucune information sur ce qu'elles représentent. Par exemple, votre fichier csv (voir [formats de base](baseFormats.md)) présente des lignes comme :
 ```
 0.00124,127.4,petite,13,5,3
 ```
