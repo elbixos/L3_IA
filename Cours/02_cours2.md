@@ -302,22 +302,17 @@ On voit dans le pseudo code qui précède, que l'algo va en fait voir
 la totalité de la base de nombreuses fois (1000 fois)
 
 Au fur et à mesure des essais, la probabilité d'erreur devrait
-diminuer. Dit autrement, la probabilité
-On peut ainsi observer la probabilité de succès sur la **base
-d'apprentissage** au fur et à mesure du temps.
-On mesure ainsi les **performances en apprentissage** pendant l'optimisation.
-
-
+diminuer. Dit autrement, la **précision en apprentissage** doit
+augmenter avec le temps, pendant l'apprentissage.
 
 Elle doivent (si tout se passe bien) évoluer de la façon suivante :
 
-La figure suivante est tirée des tests effectués par l'un d'entre vous sur
-de la reconnaissance de caractères à partir d'images. Il y a 10 classes possibles,
-l'algorithme a donc, en tirant au hasard sa réponse, une probabilité
-de succès de 0.1. Ce sont les performances au début de l'apprentissage.
-On voit qu'il progresse, puis stagne.
 
 ![exemple de proba d'erreur en apprentissage](scalarFMnistMono.png)
+
+*La figure précédente est en fait tirée des tests effectués par l'un d'entre vous sur de la reconnaissance de caractères à partir d'images. Il y a 10 classes possibles, l'algorithme a donc, en tirant au hasard sa réponse, une probabilité
+de succès de 0.1. Ce sont les performances au début de l'apprentissage.
+On voit qu'il progresse, puis stagne.*
 
 On voit que notre algorithme a atteint, à la fin de son apprentissage, une
 probabilité de classification correcte en apprentissage d'à peu près 0.80.
@@ -326,18 +321,21 @@ et de la difficulté du problème). Par contre, on voit qu'il ne sert plus à ri
 de continuer à entrainer cet algorithme, il a déja atteint ses limites depuis
 longtemps.
 
-Ces performances ne sont toutefois pas une image correcte de ce que ferait notre
-algorithme en situations réelles, car il est ici évalué sur des exemples qu'il
-connait déja. On mesure alors sa probabilité de classification correcte sur la
-**base de généralisation** constituées d'exemples qu'il ne connait pas.
+Je vous rappelle que ces performances ne sont toutefois pas une évaluation
+correcte de ce que ferait notre algorithme en situations réelles, car il est
+ici évalué sur des exemples qu'il connait déja.
 
-Ces performances en généralisation sont logiquement inférieures aux performances
-en apprentissage, mais pas trop. Dans le cas correspondant à l'image présentée ci
+On doit donc mesurer maintenant sa probabilité de classification correcte sur la
+**base de généralisation**.
+
+Dans le cas correspondant à l'image présentée au dessus
 dessus, la probabilité de classification correcte en généralisation était de
-0.76...
+0.76.
 
+- Qu'en déduisez vous ? (réponse : pas d'overfitting, il faudra **améliorer le
+modèle** pour avoir de meilleures performances)
 
 ___
 
-Vous pouvez repartir vers le [Sommaire](99_sommaire.md)
+Vous pouvez passer au [Cours 3](03_cours3.md) ou  repartir vers le [Sommaire](99_sommaire.md)
 ___
