@@ -1,5 +1,5 @@
 # Principe des algorithmes de descente stochastiques
-(niveau 2)
+(niveau 1)
 
 ## Principe de base
 
@@ -77,3 +77,10 @@ Vous pouvez déja retenir que :
 ## Minimum Global et Minimum Local
 
 TODO (urgemment)
+
+## Méthodes plus élaborées de descente stochastiques
+(Niveau 2)
+
+descente du gradient et ses amis.
+
+TODO
