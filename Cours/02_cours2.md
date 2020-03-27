@@ -1,3 +1,9 @@
+
+<script type="text/javascript" async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
 # Cours 2
 
 ## L'instant Philo.
@@ -223,14 +229,15 @@ en noir dans la figure suivante.
 TODO : ajouter figure.
 
 L'équation de n'importe quelle droite passant par ce point (M[0],M[1]) est donc
-$$a(x-M[0] + b (y-M[1]) + c = 0 $$, avec $(a,b,c) \in R^3$
+$$a(x-M[0] + b (y-M[1]) = 0 $$, avec $(a,b) \in R^3$
 
-Pour un couple de paramètre fixé (donc pour une droite donnée),
-la décision de notre algorithme est prise de la façon suivante :
-- si $a(x-M[0] + b(y-M[1]) + c > 0$ : on décide que c'est un homme,
+Pour un couple de paramètre (a,b) fixé (donc pour une droite donnée), si le
+vecteur de caractéristiques est [x,y], la décision de notre algorithme est prise
+de la façon suivante :
+- si $a(x-M[0] + b(y-M[1]) > 0$ : on décide que c'est un homme,
 - sinon, c'est une femme
 
-La figure suivante présente 2 exemples de droite (donc deux algorithmes
+La figure suivante présente 2 exemples de droites (donc deux algorithmes
   différents mais basés sur ce principe), dont les performances en Apprentissage
   sont différentes
 
@@ -240,7 +247,7 @@ Posez vous les questions suivantes :
 - entre ces deux algorithmes, lequel est le meilleur ? (la réponse est : le bleu.)
 - Peut on faire mieux ? (la réponse est oui)
 
-Il s'agit donc de trouver les paramètres (a,b,c) qui donnent les meilleurs
+Il s'agit donc de trouver les paramètres (a,b) qui donnent les meilleurs
 résultats. Meilleurs signifiant ici : avec la meilleure mesure de performance
 en apprentissage. C'est un problème d'**optimisation**. Vous avez eu des cours
 à ce sujet, je pense.
@@ -251,7 +258,7 @@ consiste à faire la chose suivante (en pseudo code)
 ```python
 # on choisit un triplet (a0,b0,c0) initial (éventuellement au hasard)
 # Ce triplet sera le premier jeu de paramètres testé par notre algo.
-(testa,testb,testc) = (a0,b0,c0)
+(testa,testb) = (a0,b0)
 
 # On cree une variable pour mémoriser les meilleurs performances trouvées
 bestPerreur = 1
@@ -270,7 +277,7 @@ while bestPerreur > 0 and n < nMax:
 
   # On met a jour les meilleurs perf trouvées et les meilleurs param trouvés
   if newPerreur < bestPerreur :
-    (a,b,c) = (testa,testb,testc)
+    (a,b) = (testa,testb)
     bestPerreur = newPerreur
 
   # On génère une nouvelle configuration en deplacant testa,testb,testc
@@ -285,8 +292,8 @@ fonction *mesureProbaErreur*). A ceci près que je n'ai pas fixé de valeur
 à la variable *pas*...
 
 A l'issue de cet algorithme :
-- on aura testé 1000 possibilités pour (a,b,c)
-- en partant de (a0,b0,c0)
+- on aura testé 1000 possibilités pour (a,b)
+- en partant de (a0,b0)
 - en conservant toujours la meilleur possible
 - en essayant toujours juste a coté de la meilleur solution trouvée jusque là
 
@@ -318,12 +325,12 @@ On voit que notre algorithme a atteint, à la fin de son apprentissage, une
 probabilité de classification correcte en apprentissage d'à peu près 0.80.
 La valeur finale est peu importante (elle dépend de la qualité de l'algorithme
 et de la difficulté du problème). Par contre, on voit qu'il ne sert plus à rien
-de continuer à entrainer cet algorithme, il a déja atteint ses limites depuis
+de continuer à entraîner cet algorithme, il a déjà atteint ses limites depuis
 longtemps.
 
 Je vous rappelle que ces performances ne sont toutefois pas une évaluation
 correcte de ce que ferait notre algorithme en situations réelles, car il est
-ici évalué sur des exemples qu'il connait déja.
+ici évalué sur des exemples qu'il connaît déjà.
 
 On doit donc mesurer maintenant sa probabilité de classification correcte sur la
 **base de généralisation**.
