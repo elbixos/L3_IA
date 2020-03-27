@@ -229,12 +229,12 @@ en noir dans la figure suivante.
 TODO : ajouter figure.
 
 L'équation de n'importe quelle droite passant par ce point (M[0],M[1]) est donc
-$$a(x-M[0] + b (y-M[1]) = 0 $$, avec $(a,b) \in R^3$
+$$a(x-M[0] + b (y-M[1]) = 0 $$, avec $$(a,b) \in R^2$$
 
 Pour un couple de paramètre (a,b) fixé (donc pour une droite donnée), si le
 vecteur de caractéristiques est [x,y], la décision de notre algorithme est prise
 de la façon suivante :
-- si $a(x-M[0] + b(y-M[1]) > 0$ : on décide que c'est un homme,
+- si $$ a(x-M[0] + b(y-M[1]) > 0 $$ : on décide que c'est un homme,
 - sinon, c'est une femme
 
 La figure suivante présente 2 exemples de droites (donc deux algorithmes
