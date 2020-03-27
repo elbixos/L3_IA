@@ -234,7 +234,7 @@ $$a(x-M[0] + b (y-M[1]) = 0 $$, avec $$(a,b) \in R^2$$
 Pour un couple de paramètre (a,b) fixé (donc pour une droite donnée), si le
 vecteur de caractéristiques est [x,y], la décision de notre algorithme est prise
 de la façon suivante :
-- si $$ a(x-M[0] + b(y-M[1]) > 0 $$ : on décide que c'est un homme,
+- si $$ a(x-M[0]) + b(y-M[1]) > 0 $$ : on décide que c'est un homme,
 - sinon, c'est une femme
 
 La figure suivante présente 2 exemples de droites (donc deux algorithmes
