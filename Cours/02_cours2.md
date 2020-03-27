@@ -300,8 +300,9 @@ A l'issue de cet algorithme :
 Cette méthode simple mais efficace rentre dans la grande catégorie des
 [algorithmes d'optimisation](HyperLinks/algoOptim.md). Pour information, c'est un membre
 de la classe des algorithmes dits "**de Monte carlo**". La variable *pas*
-est le pas de la descente, et se retrouve a peu près dans toutes ces méthodes,
+est le **pas de la descente**, et se retrouve a peu près dans toutes ces méthodes,
 sous une forme ou une autre. Il faut souvent l'adapter au problème traité.
+(voir [pas d'une descente](pasDescente.md))
 
 ### Évolution des performances pendant l'apprentissage
 
