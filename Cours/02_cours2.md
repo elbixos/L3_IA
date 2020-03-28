@@ -248,7 +248,7 @@ Posez vous les questions suivantes :
 - entre ces deux algorithmes, lequel est le meilleur ? (la réponse est : celui de la droite 2.)
 - Peut on faire mieux ? (la réponse est oui)
 
-Il s'agit donc de trouver les paramètres (a,b) qui donnent les meilleurs
+Il s'agit donc de trouver le paramètres *p* qui donne les meilleurs
 résultats. Meilleurs signifiant ici : avec la meilleure mesure de performance
 en apprentissage. C'est un problème d'**optimisation**. Vous avez eu des cours
 à ce sujet, je pense.
@@ -287,7 +287,7 @@ while n < nMax:
   n+=1
 ```
 
-Mon pseudo code devrait fonctionner en python (sous réserve d'avoir fait la
+Mon pseudo code fonctionne en python (sous réserve d'avoir fait la
 fonction *mesureProbaErreur*). A ceci près que je n'ai pas fixé de valeur
 à la variable *pas*...
 
@@ -295,7 +295,7 @@ A l'issue de cet algorithme :
 - on aura testé 1000 possibilités pour (a,b)
 - en partant de (a0,b0)
 - en conservant toujours la meilleur possible
-- en essayant toujours juste a coté de la meilleur solution trouvée jusque là
+- en essayant toujours juste à coté de la meilleure solution trouvée jusque là
 
 Cette méthode simple mais efficace rentre dans la grande catégorie des
 [algorithmes d'optimisation](HyperLinks/algoOptim.md). Pour information, c'est un membre
@@ -336,12 +336,12 @@ Elle doivent (si tout se passe bien) évoluer de la façon suivante :
 
 ![exemple de proba d'erreur en apprentissage](scalarFMnistMono.png)
 
-*La figure précédente est en fait tirée des tests effectués par l'un d'entre vous sur de la reconnaissance de caractères à partir d'images. Il y a 10 classes possibles, l'algorithme a donc, en tirant au hasard sa réponse, une probabilité
+*La figure précédente est en fait tirée des tests effectués par l'un d'entre vous sur de la reconnaissance de caractères à partir d'images (à l'aide d'un réseau de neurones). Il y a 10 classes possibles, l'algorithme a donc, en tirant au hasard sa réponse, une probabilité
 de succès de 0.1. Ce sont les performances au début de l'apprentissage.
 On voit qu'il progresse, puis stagne.*
 
 On voit que notre algorithme a atteint, à la fin de son apprentissage, une
-probabilité de classification correcte en apprentissage d'à peu près 0.80.
+précision en apprentissage d'à peu près 0.80.
 La valeur finale est peu importante (elle dépend de la qualité de l'algorithme
 et de la difficulté du problème). Par contre, on voit qu'il ne sert plus à rien
 de continuer à entraîner cet algorithme, il a déjà atteint ses limites depuis
@@ -363,8 +363,9 @@ modèle** pour avoir de meilleures performances)
 
 
 TODO :
-- Faire le lien avec la recherche de Meilleure Droite.
 - Ajouter un test en généralisation dans le test de recherche de meilleure Droite...
+
+- Illustrer l'evolution des performances avec l'algo de recherche de Meilleure Droite.
 
 ___
 
