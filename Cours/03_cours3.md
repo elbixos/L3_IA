@@ -2,8 +2,10 @@
 <script type="text/javascript" async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
+# Cours 3
 
-### Apprentissage par optimisation
+
+## Apprentissage par optimisation
 
 La plupart des véritables algorithmes de machine learning sont de cette
 catégorie. Pour vous expliquer ce que c'est, je vais me servir d'un exemple.
@@ -127,7 +129,7 @@ algorithmes dits "**de Monte carlo**". Le paramètre **pas de la descente**
 sous une forme ou une autre. Il faut souvent l'adapter au problème traité.
 
 
-### Évolution des performances pendant l'apprentissage
+## Évolution des performances pendant l'apprentissage
 
 On voit dans le pseudo code qui précède, que l'algo va en fait voir
 la totalité de la base de nombreuses fois (1000 fois)
@@ -175,5 +177,5 @@ TODO :
 
 ___
 
-Vous pouvez passer au [Cours 3](03_cours3.md) ou  repartir vers le [Sommaire](99_sommaire.md)
+Vous pouvez passer au [Cours 4](04_cours3.md) ou  repartir vers le [Sommaire](99_sommaire.md)
 ___

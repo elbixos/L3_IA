@@ -3,7 +3,6 @@
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 
-
 # Cours 2
 
 ## L'instant Philo.
@@ -66,7 +65,7 @@ Notez également que l'on ne peut pas visualiser réellement des exemples dans d
 espaces de dimension > 3 (Vous pourriez aller voir [visualiser les données](HyperLinks/visualise.md) si ce cas vous intéresse).
 Ceci ne nous empêche pas de réfléchir et de calculer dans ce type d'espaces.
 
-### Apprentissage Supervisé vs Apprentissage Non Supervisé
+## Apprentissage Supervisé vs Apprentissage Non Supervisé
 
 Si on regarde les choses de loin, on peut remarquer quelque chose :
 dans l'application de **clustering**, nous ne disposons à propos de nos exemples
@@ -94,7 +93,7 @@ fournir pour cet exemple. (Vous pourriez aller voir la page sur l'[Apprentissage
 supervisé](supervisedLearning.md) pour mieux comprendre comment certains
 algorithmes peuvent faire indifférement de la régression ou de la classification.)
 
-### Phases : Apprentissage / Validation / Prédiction
+## Phases : Apprentissage / Validation / Prédiction
 
 Un programme d'**Apprentissage supervisé** comporte en général 3 phases plus ou
 moins successives :
@@ -148,7 +147,7 @@ réelle (**phase de validation**).
 
 Cette séparation fait l'objet de la page [séparer sa base d'exemple](HyperLinks/baseSplit.md)
 
-### Evaluation de performances
+## Evaluation de performances
 
 Quoiqu'il en soit, nous allons essayer de construire des algorithmes aussi bons
 que possible pour un problème donné.
