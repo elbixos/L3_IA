@@ -135,7 +135,7 @@ Dans ce cas :
 - la phase de prédiction compare le vecteur a ces moyennes.
 
 Il est possible d'apprendre tout un tas d'autres choses. C'est d'ailleurs
-un des points qui distingue les différents algorithmes de classification ([classification](HyperLinks/classification.md)) ou de ([régression](HyperLinks/regression.md)).
+un des points qui distingue les différents algorithmes de classification entre eux.  (qu'il s'agisse des algo de [classification](HyperLinks/classification.md)) ou de ([régression](HyperLinks/regression.md)).
 
 Enfin, notez que pour passer ces différentes phases, il faut
 impérativement séparer la base d'exemples en deux sous bases (minimum) :
@@ -226,25 +226,26 @@ Je veux construire un algorithme qui va trouver la meilleure droite pour sépare
 ces deux classes. Je sais de plus que cette droite passe par le point M marqué
 en noir dans la figure suivante.
 
-TODO : ajouter figure.
+![nuage de points et M](images/hommesFemmesPoint.png)
 
-L'équation de n'importe quelle droite passant par ce point (M[0],M[1]) est donc
-$$a(x-M[0] + b (y-M[1]) = 0 $$, avec $$(a,b) \in R^2$$
+L'équation de n'importe quelle droite
+(non verticale) passant par ce point (M[0],M[1]) est donc
+$$y - p(x-M[0]) -M[1]) = 0 $$, avec $$p \in R$$
 
-Pour un couple de paramètre (a,b) fixé (donc pour une droite donnée), si le
+Pour un paramètre *p* fixé (donc pour une droite donnée), si le
 vecteur de caractéristiques est [x,y], la décision de notre algorithme est prise
 de la façon suivante :
-- si $$ a(x-M[0]) + b(y-M[1]) > 0 $$ : on décide que c'est un homme,
+- si $$ y - p(x-M[0]) -M[1]) > 0 $$ : on décide que c'est un homme,
 - sinon, c'est une femme
 
 La figure suivante présente 2 exemples de droites (donc deux algorithmes
   différents mais basés sur ce principe), dont les performances en Apprentissage
   sont différentes
 
-TODO ajouter figures
+  ![deux droites de séparation](images/hommesFemmesDroites.png)
 
 Posez vous les questions suivantes :
-- entre ces deux algorithmes, lequel est le meilleur ? (la réponse est : le bleu.)
+- entre ces deux algorithmes, lequel est le meilleur ? (la réponse est : celui de la droite 2.)
 - Peut on faire mieux ? (la réponse est oui)
 
 Il s'agit donc de trouver les paramètres (a,b) qui donnent les meilleurs
@@ -256,9 +257,8 @@ La solution la plus simple pour trouver une "bonne" solution
 consiste à faire la chose suivante (en pseudo code)
 
 ```python
-# on choisit un triplet (a0,b0,c0) initial (éventuellement au hasard)
-# Ce triplet sera le premier jeu de paramètres testé par notre algo.
-(testa,testb) = (a0,b0)
+# On se donne une situation de départ
+testp = -50
 
 # On cree une variable pour mémoriser les meilleurs performances trouvées
 bestPerreur = 1
@@ -270,21 +270,21 @@ nMax= 1000
 n=0
 
 # Puis on va chercher des meilleurs solutions.
-while bestPerreur > 0 and n < nMax:
+while n < nMax:
 
   # on mesure les perf obtenues sur la base d'apprentissage avec ces paramètres.
-  newPerreur = mesureProbaErreur(a,b,c, baseApprentissage)
+  newPerreur = mesureProbaErreur(testp, baseApprentissage)
 
   # On met a jour les meilleurs perf trouvées et les meilleurs param trouvés
   if newPerreur < bestPerreur :
-    (a,b) = (testa,testb)
+    p = testp
     bestPerreur = newPerreur
 
-  # On génère une nouvelle configuration en deplacant testa,testb,testc
+  # On génère une nouvelle configuration en deplacant testp
   # UN PETIT PEU et AU HASARD !
-  testa+= random.random() *pas
-  testb+= random.random() *pas
-  testb+= random.random() *pas
+  testp+= random.random() *pas
+
+  n+=1
 ```
 
 Mon pseudo code devrait fonctionner en python (sous réserve d'avoir fait la
@@ -302,7 +302,25 @@ Cette méthode simple mais efficace rentre dans la grande catégorie des
 de la classe des algorithmes dits "**de Monte carlo**". La variable *pas*
 est le **pas de la descente**, et se retrouve a peu près dans toutes ces méthodes,
 sous une forme ou une autre. Il faut souvent l'adapter au problème traité.
-(voir [pas d'une descente](pasDescente.md))
+
+
+Pour mieux comprendre la partie **descente stochastique** et cette histoire de **pas de la descente**, vous pourriez aller voir la page sur [la descente stochastique](descenteStochastique) qui contient notamment un lien vers du code exécutable que vous pourrez exécuter, modifier...
+
+Pour information, voici les résultats trouvés sur ce jeu de test par cet algo :
+```
+pente : -177.35109477634492
+proba d erreur : 0.086
+```
+
+![meilleur droite trouvée](images/hommesFemmesMeilleurDroite.png)
+
+Cet algo fonctionne !
+
+La bonne nouvelle, c'est que vous
+pouvez aller [le tester](https://colab.research.google.com/drive/18lgzZKC7N9-24rP62h3PlDY_ymPu5MsB)
+
+Je vous recommande d'essayer de changer le **pas**, **nMax** voir ce que cela change (et de comprendre pourquoi)...
+
 
 ### Évolution des performances pendant l'apprentissage
 
@@ -342,6 +360,11 @@ dessus, la probabilité de classification correcte en généralisation était de
 
 - Qu'en déduisez vous ? (réponse : pas d'overfitting, il faudra **améliorer le
 modèle** pour avoir de meilleures performances)
+
+
+TODO :
+- Faire le lien avec la recherche de Meilleure Droite.
+- Ajouter un test en généralisation dans le test de recherche de meilleure Droite...
 
 ___
 
