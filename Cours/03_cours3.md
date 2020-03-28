@@ -3,7 +3,6 @@
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 
-
 ### Apprentissage par optimisation
 
 La plupart des véritables algorithmes de machine learning sont de cette
@@ -101,9 +100,7 @@ proba d erreur : 0.086
 Cet algo fonctionne !
 
 La bonne nouvelle, c'est que vous
-pouvez aller [le tester](https://colab.research.google.com/drive/18lgzZKC7N9-24rP62h3PlDY_ymPu5MsB)
-
-Je vous recommande d'essayer de changer le **pas**, **nMax** voir ce que cela change (et de comprendre pourquoi)...
+pouvez aller [le tester](https://colab.research.google.com/drive/18lgzZKC7N9-24rP62h3PlDY_ymPu5MsB). Je vous recommande d'essayer de changer **le pas**, **nMax** voir ce que cela change (et de comprendre pourquoi)...
 
 **Recherche de plus d'un paramètre**
 
@@ -174,3 +171,9 @@ TODO :
 - Ajouter un test en généralisation dans le test de recherche de meilleure Droite...
 
 - Illustrer l'evolution des performances avec l'algo de recherche de Meilleure Droite.
+
+
+___
+
+Vous pouvez passer au [Cours 3](03_cours3.md) ou  repartir vers le [Sommaire](99_sommaire.md)
+___
