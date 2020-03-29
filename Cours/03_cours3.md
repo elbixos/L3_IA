@@ -4,6 +4,11 @@
 
 # Cours 3
 
+## Instant philo
+
+Je rédigerais quand j'aurais 5mn.
+Problèmes de biais dans les bases (?)
+
 
 ## Apprentissage par optimisation
 
