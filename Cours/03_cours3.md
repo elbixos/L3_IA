@@ -159,8 +159,8 @@ et de la difficulté du problème). Par contre, on voit qu'il ne sert plus à ri
 de continuer à entraîner cet algorithme, il a déjà atteint ses limites depuis
 longtemps.
 
-Je vous rappelle que ces performances ne sont toutefois pas une évaluation
-correcte de ce que ferait notre algorithme en situations réelles, car il est
+Je vous rappelle que **ces performances ne sont toutefois pas une évaluation
+correcte de ce que ferait notre algorithme en situations réelles**, car il est
 ici évalué sur des exemples qu'il connaît déjà.
 
 On doit donc mesurer maintenant sa probabilité de classification correcte sur la

@@ -34,7 +34,7 @@ Imaginons que je souhaite trouver le minimum de la fonction suivante.
 Ce qui nous intéresse est cette fonction *genererConfig* qui va présenter au
 programme la nouvelle configuration à tester. Au plus simple :
 
-je me déplace, de la quantité *pas*, soit à gauche soit à droite (direction tirée au hasard).
+je me déplace, de la quantité *pas*, soit à gauche soit à droite (direction tirée au hasard). (vous pouvez regarder cette [remarque](remarqueDescente.md))
 
 Voici une figure qui présente les meilleurs solutions trouvées lors d'une descente :
 - Le point de départ est indiqué en vert
@@ -76,11 +76,49 @@ Vous pouvez déja retenir que :
 
 ## Minimum Global et Minimum Local
 
-TODO (urgemment)
+Attention, les fonction dont je voudrais trouver un minimum ne sont pas forcément
+aussi sympathique que celle que j'avais prise en exemple ci dessus.
 
-## Méthodes plus élaborées de descente stochastiques
-(Niveau 2)
+Regardez par exemple celle ci :
 
-descente du gradient et ses amis.
+![fonction a minimiser](../images/aMinimiser2.png)
 
-TODO
+Une descente stochastique peut tout a fait donner ceci (le code exécutable en ligne est au même endroit que pour la fonction simple.)
+
+![une descente min local](../images/uneDescente2.png)
+
+On dit que la fonction présente des
+**minima locaux** (il y en a trois dans [10,25], et à l'oeil, 4 au total)
+
+Si ma fonction présente des minima locaux, une descente stochastique ne garantit pas de trouver le **minimum global** de la fonction (le plus petit des minimum locaux)
+
+Si vous tombez sur le minimum global (et vous ne le saurez en fait jamais), c'est que vous avez eu **beaucoup de chance**.
+
+Est ce un problème ? Oui et non, nous allons le voir
+
+## Application des descentes stochastiques aux algorithmes d'apprentissages supervisés
+*vous avez vu ? Ça commence à faire des chouettes titres de section qui font peur aux enfants...*
+
+Reprenons le problème de classification qui vous a amené ici.
+Nous cherchions la meilleure droite possible pour séparer deux paquets de points (celle avec la meilleure pente).
+
+Pour cela, nous avons choisi de trouver le meilleur paramètre (la meilleure pente) en minimisant la
+probabilité d'erreur mesurée sur la base d'apprentissage, à l'aide d'une descente stochastique. (*cette phrase aussi pique un peu*)
+
+Ayant lu ce qui précède, vous devez normalement vous demander :
+**Sommes nous plutôt dans le cas d'une fonction simple (convexe)
+ou d'une fonction présentant des minima locaux ?**
+
+La réponse est simple : **il y a des minima locaux**. *(à vrai dire, il y en a un nombre sans doute à peu près proportionnel au nombre d'exemples de la base d'apprentissage, ça mériterait presque une remarque de niveau 2 ou 3)*
+
+Donc une descente stochastique va nous donner une droite qui n'est pas la meilleure (sauf si on a beaucoup de chance).
+
+Mais cette droite correspond à un algorithme. Du coup :
+- Si les performances de cet algorithme sont suffisantes pour
+votre problème, ben c'est bon. Ce n'est pas le meilleur, mais il fera l'affaire.
+- Sinon, il vous reste trois choix :
+  - changer d'[algorithme d'optimisation](algoOptim.md), pour qu'il soit moins sensible aux minima locaux.
+  - changer de [mesure de performance](perfMeasures.md) (minimiser autre chose que la proba d'erreur)
+  - changer de [modèle](HyperLinks/qualiteModele.md) (arreter de chercher des droites)
+
+Voilà !
