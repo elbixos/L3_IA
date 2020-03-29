@@ -4,6 +4,7 @@
 
 
 # Cours 2
+(*niveau de base*)
 
 ## L'instant Philo.
 
@@ -196,7 +197,7 @@ On distingue trois cas possibles. Si notre algorithme a :
   en apprentissage, tout va bien jusque là.
 - des performances en validation très inférieures aux performances en
   apprentissage, vous avez vraisemblablement un problème de
-  **sur apprentissage**. Ce cas est tellement courant qu'il fait l'objet de
+  **sur apprentissage** (ou *overfitting* en anglais). Ce cas est tellement courant qu'il fait l'objet de
   [cette page](HyperLinks/overfitting.md).
 - des performances en validation supérieures à ses performances en  
   apprentissage, c'est bizarre. Votre programme est sans doute buggé

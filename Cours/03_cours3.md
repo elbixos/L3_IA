@@ -3,6 +3,7 @@
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 # Cours 3
+(*niveau de base*)
 
 ## Instant philo
 
@@ -125,7 +126,7 @@ Il suffit, en gros, de changer :
 
 Cette méthode simple mais efficace rentre dans la grande catégorie des
 [algorithmes d'optimisation](HyperLinks/algoOptim.md) qui servent à peu près
-à tout (notamment à trouver les poids d'un réseau de neurones)
+à tout (notamment à **trouver les poids d'un réseau de neurones**, réseaux que nous verrons dans le cours 4).
 
 
 Pour information, l'algo que nous avons vu fait partie de la classe des
@@ -174,7 +175,7 @@ dessus, la probabilité de classification correcte en généralisation était de
 modèle** pour avoir de meilleures performances)
 
 
-TODO :
+TODO plus tard :
 - Ajouter un test en généralisation dans le test de recherche de meilleure Droite...
 
 - Illustrer l'evolution des performances avec l'algo de recherche de Meilleure Droite.

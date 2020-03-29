@@ -1,5 +1,5 @@
 ## Sommaire
-(niveau de base)
+(*niveau de base*)
 
 C'est le point d'accès :
 - à toutes les pages de cours.
@@ -17,13 +17,12 @@ C'est le point d'accès :
   - vecteur/espace de caractéristiques
   - apprentissage et généralisation
   - evaluation des performances.
+  - introduction à l'overfitting
 - [Cours 3](03_cours3.md) : Apprentissage par optimisation
   - Exemple de recherche de Minimum
   - Evolution des performances pendant l'apprentissage
-  - introduction a l'overfitting
-- [Cours 4](03_OLDcours3.md) : l'ancien cours 3 à mettre à jour (pour moi)
-  - evaluation de performances en regression et clustering
-  - clustering avec le k-means.
+- [Cours 4](04_cours4.md) :
+  - Introduction aux réseau de neurones
 - [Cours 5](04_OLDcours4.md) :  l'ancien cours 4 à mettre à jour (pour moi)
     - Préparer ses bases
     - problemes classiques des bases d'exemples dans la pratique (normalisation, data augmentation, malédiction de la dimensionnalité)
