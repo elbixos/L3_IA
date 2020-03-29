@@ -21,12 +21,12 @@ en noir dans la figure suivante.
 
 L'équation de n'importe quelle droite
 (non verticale) passant par ce point (M[0],M[1]) est donc
-$$y - p(x-M[0]) -M[1]) = 0 $$, avec $$p \in R$$
+$$y - p(x-M[0]) -M[1] = 0 $$, avec $$p \in R$$
 
 Pour un paramètre *p* fixé (donc pour une droite donnée), si le
 vecteur de caractéristiques est [x,y], la décision de notre algorithme est prise
 de la façon suivante :
-- si $$ y - p(x-M[0]) -M[1]) > 0 $$ : on décide que c'est un homme,
+- si $$ y - p(x-M[0]) -M[1] > 0 $$ : on décide que c'est un homme,
 - sinon, c'est une femme
 
 La figure suivante présente 2 exemples de droites (donc deux algorithmes
@@ -89,7 +89,7 @@ A l'issue de cet algorithme :
 - en essayant toujours juste à coté de la meilleure solution trouvée jusque là
 
 
-Pour mieux comprendre la partie **descente stochastique** et cette histoire de **pas de la descente**, vous pourriez aller voir la page sur [la descente stochastique](descenteStochastique) qui contient notamment un lien vers du code exécutable (sur un exemple plus simple) que vous pourrez exécuter, modifier...
+Pour mieux comprendre la partie **descente stochastique** et cette histoire de **pas de la descente**, vous pourriez aller voir la page sur [la descente stochastique](./HyperLinks/descenteStochastique) qui contient notamment un lien vers du code exécutable (sur un exemple plus simple) que vous pourrez exécuter, modifier...
 
 Pour information, voici les résultats trouvés sur ce jeu de test par cet algo :
 ```
@@ -177,5 +177,5 @@ TODO :
 
 ___
 
-Vous pouvez passer au [Cours 4](04_cours3.md) ou  repartir vers le [Sommaire](99_sommaire.md)
+Vous pouvez passer au [Cours 4](04_cours4.md) ou  repartir vers le [Sommaire](99_sommaire.md)
 ___

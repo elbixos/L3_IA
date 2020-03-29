@@ -200,7 +200,7 @@ On distingue trois cas possibles. Si notre algorithme a :
   [cette page](HyperLinks/overfitting.md).
 - des performances en validation supérieures à ses performances en  
   apprentissage, c'est bizarre. Votre programme est sans doute buggé
-  ou bien vous avez un [problème dans votre base d'exemples](HyperLinks/problemeBase.md)
+  ou bien vous avez un [problème dans votre base d'exemples](HyperLinks/problemesBase.md)
   ou encore vous avez mal [séparé votre base d'exemples](HyperLinks/baseSplit.md)
 
 Je pense que ce qui précède est facile à comprendre vu que n'importe quelle
