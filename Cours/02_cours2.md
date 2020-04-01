@@ -63,7 +63,7 @@ d'exemples. Notez que ce terme est en voie de désaffection car en sciences auss
 il y a des modes...)
 
 Notez également que l'on ne peut pas visualiser réellement des exemples dans des
-espaces de dimension > 3 (Vous pourriez aller voir [visualiser les données](HyperLinks/visualise.md) si ce cas vous intéresse).
+espaces de dimension > 3 (Vous pourriez aller voir [visualiser les données](HyperLinks/visualiseData.md) si ce cas vous intéresse).
 Ceci ne nous empêche pas de réfléchir et de calculer dans ce type d'espaces.
 
 ## Apprentissage Supervisé vs Apprentissage Non Supervisé
@@ -90,8 +90,8 @@ Les problèmes de classification et de régression sont des problèmes dits
 d'**Apprentissage Supervisé** (*supervised learning* en anglais): notre
 programme va devoir apprendre sur des exemples qui sont fournis avec la "vraie"
 réponse attendue, comme si un enseignant lui indiquait la réponse qu'il devrait
-fournir pour cet exemple. (Vous pourriez aller voir la page sur l'[Apprentissage
-supervisé](supervisedLearning.md) pour mieux comprendre comment certains
+fournir pour cet exemple. (Vous pourriez aller voir la page sur l'
+[Apprentissage supervisé](HyperLinks/supervisedLearning.md) pour mieux comprendre comment certains
 algorithmes peuvent faire indifférement de la régression ou de la classification.)
 
 ## Phases : Apprentissage / Validation / Prédiction
@@ -212,7 +212,7 @@ Un autre problème majeur est le suivant :
 Mettons que mon algorithme ait les proba d'erreur suivantes : 0.75 en apprentissage, 0.79 en généralisation.
 
 Est il bon ou pas ? En d'autres termes, quelles performances peut on atteindre avec un algorithme de machine learning ? Ce point est délicat et implique
-notamment les notion de [difficulté intrinsèque du problème](HyperLinks/difficulePb.md) et de [Qualité du modèle](HyperLinks/qualiteModele.md)
+notamment les notion de [difficulté intrinsèque du problème](HyperLinks/difficultePb.md) et de [Qualité du modèle](HyperLinks/qualiteModele.md)
 
 ___
 

@@ -129,7 +129,7 @@ Encore une fois, avec ce tableau, je pourrais faire toutes sortes de calculs, ma
 - Pourriez vous écrire un programme qui prenne cette décision ? (éventuellement
   repensez au [plus proche voisin](HyperLinks/ppv.md) ou au [k plus proches voisins](HyperLinks/kppv.md)
 
-Éventuellement, vous pourriez aller jeter un oeil à la liste des [algo de régression](regression.md)
+Éventuellement, vous pourriez aller jeter un oeil à la liste des [algo de régression](HyperLinks/regression.md)
 
 #### Conclusion sur ces applications
 
