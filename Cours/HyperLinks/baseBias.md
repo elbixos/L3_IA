@@ -12,8 +12,8 @@ implique pour le Machine Learning.
 
 ## L'exemple simple
 
-Imaginons un médicament, pour l'asthme (*en fait,
-ce que je décris a été observé pour les cancers, mais ma femme trouve que c'est anxiogène, alors je vais vous parler de l'asthme*).
+Imaginons un médicament, pour l'asthme  *(en fait,
+ce que je décris a été observé pour les cancers, mais ma femme trouve que c'est anxiogène, alors je vais vous parler de l'asthme)*.
 Vous avez le choix entre 2 traitements, **A** ou **B**.
 Vous regardez donc des études...
 
@@ -35,9 +35,9 @@ Les données sont également très claires :
 
 ### Combinaison des deux études
 *Wait, What ?*
-je reprends vous êtes atteind d'asthme, de la forme que vous voulez (grave ou pas).
+je reprends vous êtes atteint d'asthme, de la forme que vous voulez (grave ou pas).
 - une étude vous dit que **A** fonctionne mieux, en moyenne.
-- une étude vous dit que **B** fonctionne mieux pour votre cas (mais quel qu'il soit !)
+- une étude vous dit que **B** fonctionne mieux dans chaque cas envisagé (donc B est meilleur...) !
 
 Pourtant, les chiffres de ces deux études sont **corrects** et elles **travaillent
 sur la même base d'exemples**.
@@ -52,6 +52,9 @@ ben si, prenez ces chiffres :
 - traitement *B*, appliqué a 150 graves, fonctionne pour 100
 
 Voyons les résultats : Le code exécutable est [ici](https://colab.research.google.com/drive/19_GNvd23PtFOutgH2FXgE0aO8J8_qdHx)
+*(Notez que dans cet exemple, vous trouverez une analyse plus poussée qu'ici,
+liée à un sujet d'actualité (...), que je compte repasser à tous les gens qui me parlent de traitements pour le coronavirus sans être ni médecins, ni compétents
+en analyse de données.)*
 
 Mon programme affiche les recommandations les plus appropriées :
 ```
