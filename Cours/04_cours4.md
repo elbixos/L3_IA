@@ -175,18 +175,5 @@ comme pour tout algo d'apprentissage supervisé, on évaluera ses performances
 Un peu plus de détails sur cet exemple figure dans la page [exemple Simple DNN](HyperLinks/simpleDNN.md)
 
 
+
 Vous pouvez passer au [Cours 5](05_cours5.md) ou  repartir vers le [Sommaire](99_sommaire.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-TODO.
