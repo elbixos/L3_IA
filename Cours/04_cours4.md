@@ -64,8 +64,8 @@ Voici donc comment ils fonctionnent. Au coeur de ces réseaux, il y a ... des **
 
 ### Le neurone artificiel classique
 
-Le neurone standard en informatique prend des valeurs en entrée ($${x_ix, i \in {1,...n}}$$) et calcule une sortie en fonction des entrées et de paramètres
-internes ($${w_i , i \in {0,...n}}$$ ). C'est bien une petite **unité de calcul** élémentaire dont la puissance viendra de sa mise en réseau.
+Le neurone standard en informatique prend des valeurs en entrée ($$\{x_i, i \in \{1,...n\}\}$$) et calcule une sortie en fonction des entrées et de paramètres
+internes ($$\{w_i , i \in \{0,...n\}\}$$ ). C'est bien une petite **unité de calcul** élémentaire dont la puissance viendra de sa mise en réseau.
 
 Son fonctionnement est décrit dans la figure suivante :
 ![foncionnement neurone](./images/neurone.png)
@@ -95,6 +95,9 @@ la fonction **ReLU**, dont voici le graphe :
 ![fonction relu](./images/relu.png)
 
 La sortie de la fonction d'activation est la **sortie du neurone** ($$y$$).
+
+$$ y = f(\sum_{i =1..n} w_i.x_i + w_0)$$
+
 Dans le cas de la fonction ReLU, le fonctionnement du neurone est donc le suivant :
 
 1. Le neurone calcule la somme pondérée des entrées $$S$$
