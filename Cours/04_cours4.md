@@ -131,7 +131,7 @@ Ainsi, quand on communique des caractéristique à un réseau de neurone, chaque
 La **décision du réseau** pour un exemple donnée est prise en regardant **quel neurone de sortie a la sortie la plus grande**
 
 Reprenons cela sous forme plus mathématique : soit $$y_i$$ les sorties
-de chaque neurone de la couche de sortie pour un certain exemple. La décision $$d$$ du réseau pour cet exemple est la classe $$d$$, avec $$d = argmax_i y_i$$.
+de chaque neurone de la couche de sortie pour un certain exemple. La décision du réseau pour cet exemple est la classe $$d$$, avec $$d = argmax_i (y_i)$$.
 
 C'est bien un fonctionnement de [fonctions Discriminantes](HyperLinks/discriminantFunctions.md).
 
