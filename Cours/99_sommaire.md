@@ -23,9 +23,7 @@ C'est le point d'accès :
   - Evolution des performances pendant l'apprentissage
 - [Cours 4](04_cours4.md) :
   - Introduction aux réseau de neurones
-- [Cours 5](04_OLDcours4.md) :  l'ancien cours 4 à mettre à jour (pour moi)
-    - Préparer ses bases
-    - problemes classiques des bases d'exemples dans la pratique (normalisation, data augmentation, malédiction de la dimensionnalité)
+- [Cours 5](05_cours5.md) : Exemple d'application
 
 
 ### Les TP
