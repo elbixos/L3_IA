@@ -147,6 +147,13 @@ Prenons un exemple. Nous voulons toujours classifier des individus selon leur se
 - Notre réseau aura 2 sorties (une pour les hommes, une pour les femmes)
 - Je décide de façon arbitraire de mettre entre les deux 2 couches cachées, de 5 neurones chacune.
 
+Une représentation sommaire de ce réseau est la suivante :
+
+![modèle simple DNN Classif](./images/modelSimpleDNN.png)
+
+Notez que **La couche d'entrée ne contient pas de neurones**. C'est juste le lieu
+ou l'on place les caractéristiques...
+
 Le nombre de paramètres libres est donc :
 - première couche : chaque neurone à 2 entrées, et un biais -> $$5.(2+1)$$ poids
 au total.
@@ -173,7 +180,6 @@ comme pour tout algo d'apprentissage supervisé, on évaluera ses performances
 à l'aide d'une **base de validation**.
 
 Un peu plus de détails sur cet exemple figure dans la page [exemple Simple DNN](HyperLinks/simpleDNN.md)
-
 
 
 Vous pouvez passer au [Cours 5](05_cours5.md) ou  repartir vers le [Sommaire](99_sommaire.md)
