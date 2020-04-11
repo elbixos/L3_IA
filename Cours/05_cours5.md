@@ -10,7 +10,7 @@ et son traitement nous permettra de revoir en détail les notions abordées
 jusqu'ici.
 
 L'ensemble du traitement est accessible
-[a partir de cette page](https://drive.google.com/open?id=1KcEk1kuvoFgR7svmQKeXIJJ1S90S3qzR)
+[a partir de cette page](https://colab.research.google.com/drive/1hPak1FTdFZUy_7U5mQkoPfrBF7BlvpoK)
 
 Si vous cliquez sur ce lien, on vous proposera de télécharger le fichier, ou de l'exécuter dans Colab. Colab, est un environnement d'exécution (hébergé par google) très utilisé en Machine Learning
 pour faire tourner des réseaux de neurones à distance...
