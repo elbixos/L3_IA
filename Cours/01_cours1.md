@@ -24,6 +24,7 @@ groupes (des **clusters**). Nous voudrions visualiser nos exemples.
 Un exemple sera ici constitué de 2 informations :
 - taille
 - poids
+
 taille et poids sont appelées les **caractéristiques** du problème (*features* en anglais).
 
 On peut penser chaque exemple comme un point (ou un vecteur) dans un espace de
