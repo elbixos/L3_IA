@@ -11,3 +11,7 @@ et à regarder comment elle est constituée.
 (sous Colab, par exemple)
 3. Rédigez un rapport sur vos travaux
 4. déposez **le code** et **le rapport** sur ecursus, dans la zone de dépot prévue pour
+
+---
+Vous pouvez repartir vers le [Sommaire](99_sommaire.md)
+---
