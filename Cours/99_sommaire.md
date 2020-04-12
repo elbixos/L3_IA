@@ -30,7 +30,7 @@ C'est le point d'accès :
 
 Pour ces TP, il vous faudra me rendre :
 - votre code,
-- ajoutun rapport final en pdf.
+- un rapport final en pdf.
 
 Pour ces TP, je vous conseille de suivre plus ou moins ce que j'ai fait dans le [cours 5](05_cours5.md), en supprimant toutes les errances pédagogiques.
 
