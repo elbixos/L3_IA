@@ -45,8 +45,8 @@ Posez vous les questions suivantes :
 - entre ces deux algorithmes, lequel est le meilleur ? (la réponse est : celui de la droite 2.)
 - Peut on faire mieux ? (la réponse est oui)
 
-Il s'agit donc de trouver le paramètres *p* qui donne les meilleurs
-résultats. Meilleurs signifiant ici : avec la meilleure mesure de performance
+Il s'agit donc de trouver le paramètre *p* qui donne les meilleurs
+résultats. *Meilleurs* signifiant ici : avec la meilleure mesure de performance
 en apprentissage. C'est un problème d'**optimisation**. Vous avez eu des cours
 à ce sujet, je pense.
 
@@ -90,7 +90,7 @@ fonction *mesureProbaErreur*). A ceci près que je n'ai pas fixé de valeur
 
 A l'issue de cet algorithme :
 - on aura testé 1000 possibilités pour p.
-- en partant de (a0,b0)
+- en partant de *p=-50*
 - en conservant toujours la meilleur possible
 - en essayant toujours juste à coté de la meilleure solution trouvée jusque là
 
