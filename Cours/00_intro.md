@@ -126,7 +126,7 @@ un homme ou une femme (les autres problèmes sont plus complexes).
 Peut être quelque chose comme :
 
 ```python
-  if taille < 1.73 :
+  if taille > 1.73 :
     return "homme"
   else :
     return "femme"
