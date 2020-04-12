@@ -44,7 +44,7 @@ indiquant votre nom et de quoi ca parle. Le contenu sera composé :
 **pour rendre le TP** :
 
 1. Allez sur votre version du fichier jupyter Notebook
-2. Cliquer sur "Fichier", Télécharger le code .py" qui va vous permettre de ne récupérez que les sources, sans le texte.
+2. Cliquer sur "Fichier", Télécharger le code .py" qui va vous permettre de ne récupérer que les sources, sans le texte.
 3. Vous pourrez alors déposer le code et le pdf du rapport sur e-cursus
 
 **Enoncé du/des TP** :
