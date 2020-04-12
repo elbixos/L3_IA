@@ -33,4 +33,4 @@ Outils logiciels:
 Matlab / octave
 ```
 
-Les ressources pédagogiques se trouvent ici : [Cours/README.md](Cours/README.md).
+Les ressources pédagogiques se trouvent ici : [Cours/99_sommaire.md](Cours/99_sommaire.md).
