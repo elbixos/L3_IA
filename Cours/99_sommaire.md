@@ -32,31 +32,21 @@ Pour ces TP, il vous faudra me rendre :
 - votre code,
 - ajoutun rapport final en pdf.
 
-l'énoncé est fourni dans un fichier au format **jupyter notebook** :
+Pour ces TP, je vous conseille de suivre plus ou moins ce que j'ai fait dans le [cours 5](05_cours5.md), en supprimant toutes les errances pédagogiques.
 
-[Le lien de l'énoncé et des sources du TP](https://drive.google.com/open?id=1KcEk1kuvoFgR7svmQKeXIJJ1S90S3qzR)
+Le rapport devra ressembler à **un vrai rapport**, avec une page de garde
+indiquant votre nom et de quoi ca parle. Le contenu sera composé :
+- de courbes
+- d'explications.
 
-Si vous cliquez sur ce lien, on vous proposera de télécharger le fichier, ou de l'exécuter dans Colab. Colab, est un environnement d'exécution (hébergé par google) très utilisé en Machine Learning
-pour faire tourner des réseaux de neurones à distance...
-
-- Si vous avez un compte gmail, choisissez l'option 'exécuter dans Colab'
-- Si vous n'avez pas de compte gmail
-  - créez en un si possible et recommencez
-  - si vous êtes réfractaires à l'idée d'avoir un compte gmail,
-  il vous faudra mettre en place un serveur local jupyter notebook sur votre machine. Cette solution est légèrement plus lourde, je ne vous la conseille pas forcément, mais au besoin, contactez moi, nous le ferons ensemble et on adaptera la suite de ce texte.
-
-Je vais donc supposer que vous avez un compte gmail.
-Dans la page associée au lien précédent, vous trouverez :
-- du texte qui explique des trucs
-- du code exécutable en cliquant sur le signe "Play" à coté du code.
-
-Vous pouvez modifier le contenu du Jupyter Notebook, cela ne modifiera pas ma version et vos modifications devraient être sauvegardé dans votre google drive (dans un répertoire appelé " colab Notebooks")
-
-Vous pouvez ainsi développer sur votre copie de cette page. Vous pouvez revenir dessus un autre jour à partir de votre google drive.
-
+**Ne mettez pas de code, ca ne sert a rien.** En revanche, détaillez **pourquoi vous faites certains choix** et **montrez votre maitrise du vocabulaire** du machine learning. *(Enfin, si vous voulez une note correcte...)*
 
 **pour rendre le TP** :
 
 1. Allez sur votre version du fichier jupyter Notebook
 2. Cliquer sur "Fichier", Télécharger le code .py" qui va vous permettre de ne récupérez que les sources, sans le texte.
 3. Vous pourrez alors déposer le code et le pdf du rapport sur e-cursus
+
+**Enoncé du/des TP** :
+
+- Le [TP sur la base IRIS](TP/tpIris.md)
