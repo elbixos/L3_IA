@@ -83,7 +83,7 @@ du monde pour y changer un joint.
 Il est ainsi plus difficile d'avoir un robot plombier qu'un robot chirurgien
 (la salle est fixe dans le cas du chirurgien).
 
-Une nouveauté depuis 2014 (les [GAN](HyperLinks/GAN.md)) a même permis aux IA d'atteindre des capacités de création (en musique, arts plastiques, design, mode ...).
+Une nouveauté depuis 2014 (les [GAN](HyperLinks/gan.md)) a même permis aux IA d'atteindre des capacités de création (en musique, arts plastiques, design, mode ...).
 Ces IA sont capables de générer des choses nouvelles, ressemblant aux
 exemples qui lui sont fournis pour un résultat très bluffant.
 
