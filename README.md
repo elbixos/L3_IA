@@ -2,6 +2,10 @@
 # Licence Troisième année
 # Vincent Pagé.
 
+
+*Remarque :* La totalité de ce cours et des ressources crées dans ce cadre auquel il donne accès sont sous [Licence
+CC-SA](LICENSE)
+
 Volume : 10h CM, 9h TD, 9h TP
 Logiciels et langage de programmation : Octave ou Matlab
 

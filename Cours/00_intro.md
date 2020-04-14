@@ -30,7 +30,7 @@ ce que j'explique. Ils sont anonymes, non notés et vous pouvez les refaires aut
   - Si vous voyez une erreur, constatez un problème, un manque de clarté ou que vous vous posez une question sur ce cours, contactez moi par l'intermédiaire de *e-cursus*. Soit dans les forums du cours, soit en m'envoyant un message.
 
 
-- Si vous n'êtes pas étudiant de l'Université des Antilles, enchanté de vous avoir à bord et bonne lecture. Vous pouvez au besoin piocher toute ou partie de ce dépôt pour une application **Non Commerciale**. Il y a une licence associé à ce dépôt.
+- Si vous n'êtes pas étudiant de l'Université des Antilles, enchanté de vous avoir à bord et bonne lecture. Vous pouvez au besoin piocher toute ou partie de ce dépôt pour une application. Veillez a respecter [la licence](../LICENCE) associée à ce dépôt.
 
 ### L'instant Philo : Hal 9000, Skynet, Red Queen, Jarvis et leurs amis.
 
