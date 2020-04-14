@@ -53,3 +53,6 @@ classifier et **chaque exemple** de la base d'apprentissage.
 La durée du calcul de cette distance augmente avec le **nombre de caractéristiques**.
 
 Si la base contient une centaine d'exemples, dans un espace de dimension 10, c'est peut être acceptable, mais pour des bases de 60000 exemples de 1000 caractéristiques chacun, cela peut devenir rédhibitoire.
+
+## Application à la régression :
+Elle est immédiate aussi. Il suffit de prédire la même valeur que celle associée au voisin le plus proche.

@@ -36,3 +36,6 @@ parfois rédhibitoire.
 
 Cela reste un des algorithmes dont le ratio complexité de mise en oeuvre / efficacité
 est parmi les meilleurs.
+
+## Application à la régression :
+Elle est immédiate aussi. Il suffit de combiner les prédictions associées a chacun des voisins les plus proches. On peut faire une moyenne de ces prédictions, ou une moyenne pondérée par la distance au point inconnu.
