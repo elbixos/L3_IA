@@ -16,7 +16,7 @@ A l'occasion, il peut être fait appel a des *pseudo-distance*, qui ne respecten
 mais conservent l'idée générale : **Une mesure scalaire** (un nombre) **qui augmente lorsque les points testés sont dissemblables**.
 
 Pour fixer les notations pour la suite, disons que l'on dispose
-de deux points ($$X$$ et $$Y$$) de coordonnées respectives $$\[x_1,x_2,...x_n\]$$
+de deux points ($$X$$ et $$Y$$) de coordonnées respectives $$[x_1,x_2,...x_n]$$
 et $$[y_1,y_2,...,y_n]$$ dans un espace de dimension $$n$$.
 
 Les formules ci dessous fonctionnent quelle que soit la dimension de l'espace considéré.
