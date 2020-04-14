@@ -17,7 +17,7 @@ mais conservent l'idée générale : **Une mesure scalaire** (un nombre) **qui a
 
 Pour fixer les notations pour la suite, disons que l'on dispose
 de deux points ($$X$$ et $$Y$$) de coordonnées respectives $$\[x_1,x_2,...x_n\]$$
-et $$\[y_1,y2,...,y_n\]$$ dans un espace de dimension $$n$$.
+et $$[y_1,y_2,...,y_n]$$ dans un espace de dimension $$n$$.
 
 Les formules ci dessous fonctionnent quelle que soit la dimension de l'espace considéré.
 
@@ -32,7 +32,7 @@ entre deux points. Il existe néanmoins de grands classiques.
 C'est celle à laquelle vous pensez spontanément. On l'appelle aussi distance associée à la **norme L2**.
 Sa formule est la suivante :
 
-$$ d(X,Y) = \sqrt{\sum_{i=1...n} {(x_i-y_i)^2}$$
+$$ d(X,Y) = \sqrt{ \sum_{i=1...n} {(x_i-y_i)^2}}$$
 
 ### La distance de Manhattan
 

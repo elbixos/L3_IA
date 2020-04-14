@@ -7,7 +7,7 @@ vous pouvez chercher sur le net, ce n'est pas interdit...
 ## Les Algos de classification
 
 A peu près du plus ancien au plus récent :
-- [ppv](ppv.md), [kppv][kppv.md]
+- [ppv](ppv.md) et son collègue [kppv](kppv.md)
 - décision bayesienne (difficile)
 - arbres de décision
 - svm
