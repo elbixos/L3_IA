@@ -7,7 +7,7 @@
 CC-SA](LICENSE)
 
 Volume : 10h CM, 9h TD, 9h TP
-Logiciels et langage de programmation : Octave ou Matlab
+Logiciels et langage de programmation : Python
 
 ## Le résumé de la maquette :
 Le voici, modifié le 14/04/2020 :
