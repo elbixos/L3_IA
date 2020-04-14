@@ -45,7 +45,7 @@ c'est finalement du bricolage...
 
 On suppose alors que la fonction à prédire est un polynome de degré $$p$$
 des caractéristiques. Le modèle est plus complexe, donc potentiellement
-apte a des meilleures performances, sous réserve qu'il ne fasse pas de sur-apprentissage.
+apte à donner de meilleures performances, sous réserve qu'il ne fasse pas de sur-apprentissage.
 
 Le principe est le même et les solutions sont aussi connues.
 
