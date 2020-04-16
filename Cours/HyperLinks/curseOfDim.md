@@ -5,7 +5,8 @@
 *(niveau 1)*
 
 ## L'idée
-Ce problème concerne essentiellement les applications de classification.
+Ce problème concerne les applications de classification de régression et de clustering. Je vais l'illustrer pour un **problème de classification**.
+
 
 Quel que soit le problème que vous voulez traiter, il semble intéressant de
 disposer d'autant d'informations que possible à propos des objets que vous
