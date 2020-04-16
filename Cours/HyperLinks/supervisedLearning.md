@@ -32,6 +32,10 @@ Ceci est :
 - beaucoup plus souple (si on veut ajouter une classe par exemple)
 - beaucoup plus simple pour l'algorithme. Il doit simplement apprendre a donner une valeur grande pour la sortie correspondant à la bonne classe, et faible sinon. En régression, l'algo devrait de plus donner une sortie précise numériquement.
 
+Dans ce cas, chaque sortie effectue bien une prédiction continue (un score pour la classe) dont le max fournit la décision (une classe).
+Ainsi, un réseau de neurone (par exemple) peut faire de la régression ou de la classification sans difficulté.
+
+
 ## Algorithmes multiclasse.
 
 Il existe de nombreux algorithmes prévus pour comparer 2 classes (svm entre autres).
