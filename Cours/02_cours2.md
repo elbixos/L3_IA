@@ -104,7 +104,7 @@ des exemples qu'on lui a donné.
 l'algorithme sur des exemples qu'il n'a jamais vu.
 - une phase de **Prédiction** dans laquelle on fournit au programme des exemples
 inconnus et pour lesquels il doit indiquer sa décision. Lorsque l'algorithme est disponible pour ses utilisateurs finaux, il est le plus souvent dans cette phase,
-mais pas toujours (voir [Apprentissage Inline](HyperLinks/inlineLearning.md)).
+mais pas toujours (voir [Apprentissage online](HyperLinks/onlineLearning.md)).
 
 Dans le cas d'un algorithme du plus proche voisin, il n'y a pas à proprement
 parler de phase d'apprentissage. On peut directement passer à la prédiction,
