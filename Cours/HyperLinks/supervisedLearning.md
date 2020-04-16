@@ -25,7 +25,7 @@ On utilise alors une prédiction de classe du type (ou un équivalent...)
 ## Pourquoi, et que faire, alors ?
 
 En général, on préférera, pour une classification, avoir autant de sorties
-que de classes, suivant le modèle des [fonctions discriminantes](discriminantFunctions.md). La décision prise la classe qui a
+que de classes, suivant le modèle des [fonctions discriminantes](discriminantFunctions.md). La décision prise sera la classe qui a
 obtenu la sortie la plus grande.
 
 Ceci est :
