@@ -142,7 +142,7 @@ Son utilisation suppose souvent que :
 
 Comme on l'a vu plus haut, l'entropie croisée est une mesure intéressante (il y en a d'autres) pour guider l'algorithme d'optimisation lors de l'apprentissage :
 
-Dans ce cas, **l'algorithme va choisir des poids pour optimiser l'entropie croisée moyenne sur la base**. Ce que l'algorithme optimise (minimise) est appelé la **fonction de perte** (ou *loss** en anglais).
+Dans ce cas, **l'algorithme va choisir des poids pour optimiser l'entropie croisée moyenne sur la base**. Ce que l'algorithme optimise (minimise) est appelé la **fonction de perte** (ou *loss* en anglais).
 
 Ceci ne nous empêchera aucunement de mesurer aussi les performances de l'algorithmes sur une base en termes de **probabilité de classification correcte** (*accuracy*). Cette mesure est plus facile à interpreter pour un humain, mais elle ne guide pas l'algorithme d'optimisation.
 
