@@ -30,7 +30,7 @@ print (outNorm)
 
 Ceci donne le résultat suivant :
 
-```python
+``̀ python
 [1.47251704e-07 1.77085530e-01 7.93642282e-01 2.92720411e-02]
 ```
 
