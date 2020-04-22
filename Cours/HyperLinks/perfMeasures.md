@@ -161,7 +161,7 @@ Pour cet exemple, l'algorithme commet donc une erreur : $$Y_i - Yv_i$$.
 
 La **MSE** sur un ensemble d'exemple est la **moyenne des carrés des erreurs**
 
-$$MSE = \frac{\Sum_i (Y_i - Yv_i)^2 }{N} $$
+$$MSE = \frac{\sum_i (Y_i - Yv_i)^2 }{N} $$
 
 Voila...
 
