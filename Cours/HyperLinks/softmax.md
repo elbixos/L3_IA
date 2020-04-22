@@ -21,6 +21,7 @@ Voici un code qui ferait cette conversion en utilisant le softmax de *scipy*.
 Il existe aussi un softmax dans *tensorflow* que l'on utilisera préférentiellement dans le cadre des réseaux de neurones.
 
 ``̀`python
+
 from scipy.special import softmax
 
 out = [-12, 2, 3.5, 0.2]
@@ -29,6 +30,7 @@ print (outNorm)
 ```
 
 Ceci donne le résultat suivant :
+
 ``̀`python
 [1.47251704e-07 1.77085530e-01 7.93642282e-01 2.92720411e-02]
 ```
