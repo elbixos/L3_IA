@@ -13,9 +13,9 @@ On voudrait pouvoir interpreter cette sortie
 comme : **L'algorithme pense que c'est la classe 2 avec une proba de ...**
 
 Une façon de faire ceci de façon approchée est d'utiliser la fonction **softmax**,
-dont voici la formule :
+dont voici la formule pour une sortie $$j$$. $$k$$ va parcourir toutes les sorties
 
-$$ \sigma (z_{j} = {\frac {e^{z_{j}}}{\sum _{k=1}^{K} e^{z_{k}}}} $$
+$$ \sigma (z_{j}) = {\frac {e^{z_{j}}}{\sum _{k} e^{z_{k}}}} $$
 
 Voici un code qui ferait cette conversion en utilisant le softmax de *scipy*.
 Il existe aussi un softmax dans *tensorflow* que l'on utilisera préférentiellement dans le cadre des réseaux de neurones.
