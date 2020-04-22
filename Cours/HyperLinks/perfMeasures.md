@@ -103,7 +103,7 @@ Ceci nous a permis de définir comme mesure performance des algorithmes la **pro
 
 Le problème est que cette mesure est très quantifiée. Prenons un algorithme $$A_2$$, dont la sortie sur cet exemple est $$[0.3,0.7]$$
 
-Mesuré par la simple exactitude de la décision, $$A_1$$ et $$A_2$$ sont équivalents$. Pourtant :
+Mesuré par la simple exactitude de la décision, $$A_1$$ et $$A_2$$ sont équivalents. Pourtant :
 - Si la vraie classe est 0, les deux algorithmes ont tort. Néanmoins, *A_2* est meilleur, car la valeur de sortie pour sa classe 0 est plus élevée (0.3) que celle de *A_1* (0.1)
 - Si la vraie classe est 1, les deux algorithmes ont raison. Néanmoins, *A_1* est meilleur, car la valeur de sortie pour sa classe 1 est plus élevée (0.9) que celle de *A_2* (0.7)
 
