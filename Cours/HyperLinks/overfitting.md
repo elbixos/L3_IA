@@ -92,6 +92,7 @@ Vous êtes dans un cas de :
 Si par exemple, votre **accuracy** vaut :
 - 0.94 en apprentissage
 - 0.75 en généralisation
+
 c'est du **sur apprentissage**.
 
 Si votre **accuracy** vaut 0.75 en apprentissage, c'est du **sous apprentissage**.
@@ -102,6 +103,7 @@ On utilise alors des techniques telles que :
 - l'**augmentation de données**
 - le **drop out**
 - la **régularisation des poids**
+
 pour lutter contre ce sur apprentissage et obtenir un algorithme qui soit aussi près que possible des performances optimales compte tenu de la [difficulté intrinsèque du probleme](difficultePb.md).
 
 Ces techniques ne seront pas détaillées dans ce cours, mais je vous invite a chercher sur le net si vous en sentez l'envie ou le besoin.
