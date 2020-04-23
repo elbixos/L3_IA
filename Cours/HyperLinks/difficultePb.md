@@ -18,6 +18,8 @@ Dans ce cas très précis, rien du tout.
 Je pourrais ajouter des millions d'exemples, complexifier mes algorithmes autant que je le voudrais, nous n'aurions pas de meilleures performances.
 Nous sommes limités par **la difficulté intrinsèque du problème**.
 
+*(On pourrait penser aussi à un problème qui viserait à reconnaitre le sexe exclusivement en fonction de la couleur de la peau. Ses performances devraient avoisiner au mieux les 0.5...)*
+
 Les informations que l'on fournit à l'algorithme (taille et poids) sont simplement insuffisantes pour faire mieux.
 
 Dans le cas très précis de cet exemple, nous pouvons en être plus ou moins sûrs car l'exemple est simple et l'on peut facilement générer l'algorithme optimal *(au sens de l'accuracy)* pour cette tâche (à l'aide d'un peu de **théorie Bayesienne de la décision**).
