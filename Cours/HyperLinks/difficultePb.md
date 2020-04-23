@@ -4,7 +4,7 @@
 Bon, cette partie est assez ...étrange...
 
 Reprenons notre problème de classification
-des sexes, sur la bases des informations de taille, poids (valable en france).
+des sexes, sur la base des informations de taille, poids (valable en france).
 
 Nous obtenons, après de nombreux essais, des performances de l'ordre de
 0.85 en apprentissage, mais aussi en généralisation.
