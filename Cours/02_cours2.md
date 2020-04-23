@@ -212,7 +212,7 @@ Un autre problème majeur est le suivant :
 Mettons que mon algorithme ait les proba d'erreur suivantes : 0.79 en apprentissage, 0.75 en généralisation.
 
 Est il bon ou pas ? En d'autres termes, quelles performances peut on atteindre avec un algorithme de machine learning ? Ce point est délicat et implique
-notamment les notion de [difficulté intrinsèque du problème](HyperLinks/difficultePb.md) et de [Qualité du modèle](HyperLinks/qualiteModele.md)
+notamment la notion de [difficulté intrinsèque du problème](HyperLinks/difficultePb.md).
 
 ___
 
