@@ -21,6 +21,7 @@ Commencons par le sous apprentissage, c'est plus simple.
 ## Sous Apprentissage
 
 Imaginons les données suivantes :
+
 ![donnees regression quadratique](../images/learningBaseOverfitting.png)
 
 Comme d'habitude, vous trouverez le code ayant permis de générer cette courbe ainsi que toutes celles de cette page dans un fichier
@@ -28,6 +29,7 @@ exécutable en ligne [en cliquant ici](https://colab.research.google.com/drive/1
 
 
 Si l'on tente une régression linéaire sur ces données, évidemment, ca ne marche pas très bien...
+
 ![regression underfitting](../images/regressionUnderfit.png)
 
 La régression linéaire cherche la **meilleure droite** correspondant aux données. Dans ce cas, même la meilleure des droites ne peut avoir que des performances très mauvaises.
@@ -47,8 +49,8 @@ Voyons donc son frère...
 ## Sur Apprentissage
 
 Reprenons de nouveaux exemples, ce sera plus parlant...
-
 Imaginons les données suivantes :
+
 ![donnees regression linéaire](../images/learningBaseOverfitting2.png)
 
 Echaudé par l'histoire de l'underfitting, je décide de créer un modèle de régression qui cherche le meilleur polynome de degré 5 qui fit mes données...
