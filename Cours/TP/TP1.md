@@ -19,7 +19,7 @@ propriétés chimiques. L'indice de qualité est un entier allant de 1 a 10
 
 - La description du dataset est [ici](winequality.names)
 - le dataset en lui même est composé de deux fichiers
-([vins rouges](winequality-red.csv) et [vins blancs](winequality-red.csv) )
+([vins rouges](winequality-red.csv) et [vins blancs](winequality-white.csv) )
 
 Pour des raisons de facilité de comparaison, je vous demanderais de traiter
 obligatoirement les vins rouges.
