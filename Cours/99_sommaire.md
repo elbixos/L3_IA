@@ -48,6 +48,8 @@ Déposez le fichier jupyter notebook et le pdf du rapport sur e-cursus
 
 **Enoncé du/des TP** :
 
+- le code débutant le TP sur la base Forest : [ici](https://colab.research.google.com/drive/1fsJkK7qbAZ9_tUHKXgOsqlZtxA1YRgrt?usp=sharing)
+
 L'énoncé est [ici](TP/TP1.md)
 
 <!-- - Le [TP sur la base IRIS](TP/tpIris.md) -->
